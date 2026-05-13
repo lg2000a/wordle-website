@@ -1,0 +1,13 @@
+{
+  "name": "wordle-website",
+  "version": "1.0.0",
+  "description": "Wordle past answers history lookup website",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "build": "echo 'No build needed for static site'"
+  },
+  "keywords": ["wordle", "answers", "history"],
+  "author": "Wordle Answers",
+  "license": "MIT"
+}
