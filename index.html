@@ -44,6 +44,67 @@
             margin: 0 auto;
         }
 
+        /* Navigation Bar */
+        nav {
+            background: rgba(255, 255, 255, 0.98);
+            border-radius: 12px;
+            padding: 15px 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .nav-left {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-logo {
+            font-size: 0.9em;
+            color: #666;
+            font-weight: 600;
+        }
+
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            padding: 8px 15px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            color: white;
+            background: var(--primary);
+        }
+
+        .nav-divider {
+            height: 20px;
+            width: 1px;
+            background: var(--border);
+        }
+
+        .strategy-guide-link {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white !important;
+            padding: 10px 20px !important;
+            border-radius: 8px !important;
+            font-weight: 700 !important;
+        }
+
+        .strategy-guide-link:hover {
+            background: linear-gradient(135deg, var(--secondary) 0%, #5a3a8a 100%) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
         header {
             background: white;
             border-radius: 12px;
@@ -331,12 +392,46 @@
             .words-grid {
                 grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
             }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+            }
+
+            .nav-left {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+
+            .strategy-guide-link {
+                width: 100% !important;
+            }
+
+            .nav-divider {
+                display: none;
+            }
         }
     </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1574975766873033"
      crossorigin="anonymous"></script></head>
 <body>
     <div class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="nav-left">
+                <span class="nav-logo">Wordle Resources</span>
+                <div class="nav-divider"></div>
+                <a href="#past-answers">Past Answers</a>
+                <a href="https://wordle-guide-hub.vercel.app/" class="strategy-guide-link">📚 Strategy Guides</a>
+            </div>
+        </nav>
+
         <header>
             <h1>🎮 Wordle Past Answers</h1>
             <p class="tagline">Complete Database of All Historical Wordle Answers</p>
@@ -490,7 +585,8 @@
                 <a href="#about">About</a> | 
                 <a href="#contact">Contact</a> | 
                 <a href="#privacy">Privacy Policy</a> | 
-                <a href="#terms">Terms of Service</a>
+                <a href="#terms">Terms of Service</a> |
+                <a href="https://wordle-guide-hub.vercel.app/">Wordle Strategy Guides</a>
             </p>
             <p style="font-size: 0.9em; color: #999;">
                 Wordle is a registered trademark of The New York Times Company. This site is not affiliated with or endorsed by The New York Times.
