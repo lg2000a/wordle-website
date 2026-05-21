@@ -1,0 +1,459 @@
+{
+  "metadata": {
+    "last_updated": "2026-05-21",
+    "total_answers": 1790,
+    "data_format_version": "1.0"
+  },
+  "answers": {
+    "1790": {
+      "wordleNumber": 1790,
+      "date": "2026-05-14",
+      "answer": "TRAIN",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains two vowels: A and I.",
+          "detail": "Vowel A appears in position 3, and I appears in position 4. Both are standard vowels.",
+          "stats": "Two vowels appears in 1,247 out of 2,309 Wordle answers."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is T.",
+          "detail": "T is a moderately common starting letter in Wordle, appearing in 152 of the 2,309 possible answers.",
+          "stats": "T ranks 4th among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters in this Wordle.",
+          "detail": "Every letter appears exactly once: T-R-A-I-N."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is N.",
+          "detail": "N is a very common ending letter, appearing at the end of 287 Wordle answers.",
+          "stats": "N is the 5th most common ending letter."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "A vehicle that runs on tracks used for transporting passengers or cargo."
+        }
+      },
+      "meaning": "A connected series of railroad cars pulled by a locomotive.",
+      "etymologyOrUse": "From Old French 'traine,' originally meaning a procession. The transportation meaning emerged in the 18th century.",
+      "authorNotes": "TRAIN is straightforward and common. Solved in 4 guesses using SLATE as opening word.",
+      "authorScore": 4,
+      "authorSkillScore": 89,
+      "authorLuckScore": 45,
+      "botScore": 3,
+      "startWord": "SLATE",
+      "startWordStats": "SLATE left 120 possible remaining answers.",
+      "averageScore": 3.9,
+      "difficulty": "easy"
+    },
+    "1789": {
+      "wordleNumber": 1789,
+      "date": "2026-05-13",
+      "answer": "PIANO",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains three vowels: I, A, and O.",
+          "detail": "I appears in position 2, A in position 3, and O in position 5.",
+          "stats": "Three vowels is less common, appearing in about 600 Wordle answers."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is P.",
+          "detail": "P is a common starting letter in Wordle, appearing in 142 possible answers.",
+          "stats": "P ranks 6th among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters in this Wordle.",
+          "detail": "Every letter appears exactly once: P-I-A-N-O."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is O.",
+          "detail": "O is a common ending letter in English words.",
+          "stats": "O appears as the ending letter in 132 Wordle answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "A large musical instrument with a keyboard."
+        }
+      },
+      "meaning": "A large keyboard musical instrument with strings struck by hammers.",
+      "etymologyOrUse": "From Italian 'pianoforte,' meaning 'soft-loud,' referring to its dynamic range.",
+      "authorNotes": "PIANO has multiple vowels which can be tricky. Solved in 5 guesses.",
+      "authorScore": 5,
+      "authorSkillScore": 72,
+      "authorLuckScore": 38,
+      "botScore": 4,
+      "startWord": "SLATE",
+      "startWordStats": "SLATE left 98 possible answers.",
+      "averageScore": 4.2,
+      "difficulty": "medium"
+    },
+    "1788": {
+      "wordleNumber": 1788,
+      "date": "2026-05-12",
+      "answer": "GHOST",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains one vowel: O.",
+          "detail": "The vowel O appears in position 3.",
+          "stats": "Single vowel words appear in about 400 Wordle answers."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is G.",
+          "detail": "G is a moderately common starting letter, appearing in 115 answers.",
+          "stats": "G ranks 11th among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters in this Wordle.",
+          "detail": "Every letter appears exactly once: G-H-O-S-T."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is T.",
+          "detail": "T is a very common ending letter in English.",
+          "stats": "T appears at the end of 253 Wordle answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "A supernatural apparition or spirit."
+        }
+      },
+      "meaning": "The spirit of a dead person appearing to the living.",
+      "etymologyOrUse": "From Old English 'gast,' meaning spirit or soul.",
+      "authorNotes": "GHOST is a common word but the GH- opening can be tricky. Solved in 4 guesses.",
+      "authorScore": 4,
+      "authorSkillScore": 81,
+      "authorLuckScore": 52,
+      "botScore": 3,
+      "startWord": "SLATE",
+      "startWordStats": "SLATE left 145 possible answers.",
+      "averageScore": 3.8,
+      "difficulty": "easy"
+    },
+    "1787": {
+      "wordleNumber": 1787,
+      "date": "2026-05-11",
+      "answer": "LIGHT",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains one vowel: I.",
+          "detail": "The vowel I appears in position 2.",
+          "stats": "Single vowel words are fairly common in Wordle."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is L.",
+          "detail": "L is a common starting letter, appearing in 87 Wordle answers.",
+          "stats": "L ranks 13th among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters in this Wordle.",
+          "detail": "Every letter appears exactly once: L-I-G-H-T."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is T.",
+          "detail": "T is a very common ending letter.",
+          "stats": "T appears at the end of 253 Wordle answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "Natural illumination or something not heavy."
+        }
+      },
+      "meaning": "The natural agent that stimulates sight and makes things visible.",
+      "etymologyOrUse": "From Old English 'leoht,' related to Latin 'lux.'",
+      "authorNotes": "LIGHT is straightforward. The -IGHT pattern is common in English. Solved in 3 guesses.",
+      "authorScore": 3,
+      "authorSkillScore": 94,
+      "authorLuckScore": 68,
+      "botScore": 3,
+      "startWord": "SLATE",
+      "startWordStats": "SLATE left 87 possible answers.",
+      "averageScore": 3.6,
+      "difficulty": "easy"
+    },
+    "1786": {
+      "wordleNumber": 1786,
+      "date": "2026-05-10",
+      "answer": "BREAD",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains two vowels: E and A.",
+          "detail": "E appears in position 3, and A appears in position 4.",
+          "stats": "Two vowels is a common pattern in Wordle."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is B.",
+          "detail": "B is a very common starting letter, appearing in 173 answers.",
+          "stats": "B ranks 3rd among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters in this Wordle.",
+          "detail": "Every letter appears exactly once: B-R-E-A-D."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is D.",
+          "detail": "D is a common ending letter in English.",
+          "stats": "D appears at the end of 118 Wordle answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "A staple food made from flour and water."
+        }
+      },
+      "meaning": "Food made of flour, water, and yeast mixed together and baked.",
+      "etymologyOrUse": "From Old English 'bread,' possibly related to 'brew.'",
+      "authorNotes": "BREAD is a very common word. Solved in 4 guesses.",
+      "authorScore": 4,
+      "authorSkillScore": 85,
+      "authorLuckScore": 42,
+      "botScore": 3,
+      "startWord": "SLATE",
+      "startWordStats": "SLATE left 102 possible answers.",
+      "averageScore": 3.7,
+      "difficulty": "easy"
+    },
+    "1785": {
+      "wordleNumber": 1785,
+      "date": "2026-05-09",
+      "answer": "CROWN",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains one vowel: O.",
+          "detail": "The vowel O appears in position 4.",
+          "stats": "Single vowel words are common in Wordle."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is C.",
+          "detail": "C is a very common starting letter, appearing in 198 answers.",
+          "stats": "C ranks 2nd among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters in this Wordle.",
+          "detail": "Every letter appears exactly once: C-R-O-W-N."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is N.",
+          "detail": "N is a very common ending letter.",
+          "stats": "N appears at the end of 287 Wordle answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "A circular ornament worn by royalty on the head."
+        }
+      },
+      "meaning": "A circular ornamental headdress worn by a monarch as a symbol of sovereignty.",
+      "etymologyOrUse": "From Latin 'corona,' meaning wreath or garland.",
+      "authorNotes": "CROWN has the CR- opening which is fairly common. Solved in 4 guesses.",
+      "authorScore": 4,
+      "authorSkillScore": 88,
+      "authorLuckScore": 47,
+      "botScore": 3,
+      "startWord": "SLATE",
+      "startWordStats": "SLATE left 134 possible answers.",
+      "averageScore": 3.8,
+      "difficulty": "easy"
+    },
+    "1784": {
+      "wordleNumber": 1784,
+      "date": "2026-05-08",
+      "answer": "CRISP",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains one vowel: I.",
+          "detail": "The vowel I appears in position 3.",
+          "stats": "Single vowel words are common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is C.",
+          "detail": "C is very common, appearing in 198 answers.",
+          "stats": "C ranks 2nd."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters.",
+          "detail": "Every letter appears once: C-R-I-S-P."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is P.",
+          "detail": "P is less common as an ending letter.",
+          "stats": "P appears at the end of 61 answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "Firm, dry, and brittle texture."
+        }
+      },
+      "meaning": "Pleasingly firm and brittle.",
+      "etymologyOrUse": "From Latin 'crispus,' meaning curled.",
+      "authorNotes": "CRISP has an uncommon ending. Solved in 5 guesses.",
+      "authorScore": 5,
+      "authorSkillScore": 76,
+      "authorLuckScore": 35,
+      "botScore": 4,
+      "startWord": "SLATE",
+      "startWordStats": "SLATE left 167 possible answers.",
+      "averageScore": 4.3,
+      "difficulty": "medium"
+    },
+    "1783": {
+      "wordleNumber": 1783,
+      "date": "2026-05-07",
+      "answer": "PEARL",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains two vowels: E and A.",
+          "detail": "E appears in position 2, A in position 3.",
+          "stats": "Two vowels is common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is P.",
+          "detail": "P appears in 142 answers.",
+          "stats": "P ranks 6th."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters.",
+          "detail": "Every letter appears once: P-E-A-R-L."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is L.",
+          "detail": "L is a common ending.",
+          "stats": "L appears at the end of 155 answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "A precious gem formed in oysters."
+        }
+      },
+      "meaning": "A hard, lustrous spherical mass formed within the shell of a pearl oyster.",
+      "etymologyOrUse": "From Latin 'perla,' of uncertain origin.",
+      "authorNotes": "PEARL is straightforward. Solved in 4 guesses.",
+      "authorScore": 4,
+      "authorSkillScore": 82,
+      "authorLuckScore": 51,
+      "botScore": 3,
+      "startWord": "SLATE",
+      "startWordStats": "SLATE left 98 possible answers.",
+      "averageScore": 3.9,
+      "difficulty": "easy"
+    },
+    "1782": {
+      "wordleNumber": 1782,
+      "date": "2026-05-06",
+      "answer": "FLAME",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains two vowels: A and E.",
+          "detail": "A appears in position 3, E in position 5.",
+          "stats": "Two vowels is common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is F.",
+          "detail": "F appears in 82 answers.",
+          "stats": "F ranks 15th."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters.",
+          "detail": "Every letter appears once: F-L-A-M-E."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is E.",
+          "detail": "E is the most common ending letter.",
+          "stats": "E appears at the end of 424 answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "Hot glowing gas from fire."
+        }
+      },
+      "meaning": "Hot glowing body of ignited gas produced by combustion.",
+      "etymologyOrUse": "From Latin 'flamma,' meaning blaze.",
+      "authorNotes": "FLAME is common. Solved in 3 guesses.",
+      "authorScore": 3,
+      "authorSkillScore": 91,
+      "authorLuckScore": 64,
+      "botScore": 3,
+      "startWord": "SLATE",
+      "startWordStats": "SLATE left 76 possible answers.",
+      "averageScore": 3.5,
+      "difficulty": "easy"
+    },
+    "1781": {
+      "wordleNumber": 1781,
+      "date": "2026-05-05",
+      "answer": "SHARK",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains one vowel: A.",
+          "detail": "A appears in position 3.",
+          "stats": "Single vowel is common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is S.",
+          "detail": "S is the most common starting letter in Wordle, appearing in 365 answers.",
+          "stats": "S ranks 1st."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters.",
+          "detail": "Every letter appears once: S-H-A-R-K."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is K.",
+          "detail": "K is less common as an ending.",
+          "stats": "K appears at the end of 28 answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "A large predatory marine fish."
+        }
+      },
+      "meaning": "A large predatory fish with a cartilaginous skeleton.",
+      "etymologyOrUse": "Origin uncertain, possibly from German 'Schurke' meaning villain.",
+      "authorNotes": "SHARK has an uncommon -K ending. Solved in 5 guesses.",
+      "authorScore": 5,
+      "authorSkillScore": 73,
+      "authorLuckScore": 39,
+      "botScore": 4,
+      "startWord": "SLATE",
+      "startWordStats": "SLATE left 189 possible answers.",
+      "averageScore": 4.4,
+      "difficulty": "medium"
+    }
+  }
+}
