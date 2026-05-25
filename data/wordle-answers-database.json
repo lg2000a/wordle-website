@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-05-21",
-    "total_answers": 1790,
+    "last_updated": "2026-05-25",
+    "total_answers": 1801,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -454,6 +454,503 @@
       "startWordStats": "SLATE left 189 possible answers.",
       "averageScore": 4.4,
       "difficulty": "medium"
+    },
+    "1791": {
+      "wordleNumber": 1791,
+      "date": "2026-05-15",
+      "answer": "CREED",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains two vowels: E and E.",
+          "detail": "The vowel E appears twice in positions 3 and 4.",
+          "stats": "Repeated vowels appear in many Wordle answers."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is C.",
+          "detail": "C is a very common starting letter.",
+          "stats": "C ranks 2nd among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "Yes, the letter E is repeated.",
+          "detail": "The letter E appears twice: C-R-E-E-D."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is D.",
+          "detail": "D is a common ending letter.",
+          "stats": "D appears at the end of 118 Wordle answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "A system of religious belief or a set of guiding principles."
+        }
+      },
+      "meaning": "A system of religious belief; a faith.",
+      "etymologyOrUse": "From Latin 'credo' meaning 'I believe'.",
+      "authorNotes": "CREED has double E which can be tricky.",
+      "authorScore": 0,
+      "authorSkillScore": 0,
+      "authorLuckScore": 0,
+      "botScore": 0,
+      "startWord": "",
+      "startWordStats": "",
+      "averageScore": 4.1,
+      "difficulty": "medium"
+    },
+    "1792": {
+      "wordleNumber": 1792,
+      "date": "2026-05-16",
+      "answer": "MOVER",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains two vowels: O and E.",
+          "detail": "O appears in position 2, E in position 4.",
+          "stats": "Two vowels is common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is M.",
+          "detail": "M is a common starting letter.",
+          "stats": "M ranks 8th among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters.",
+          "detail": "Every letter appears once: M-O-V-E-R."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is R.",
+          "detail": "R is a very common ending letter.",
+          "stats": "R appears at the end of 212 Wordle answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "Someone or something that moves; or a company that helps people relocate."
+        }
+      },
+      "meaning": "A person or company that moves belongings from one place to another.",
+      "etymologyOrUse": "From the verb 'move' plus the agent suffix '-er'.",
+      "authorNotes": "MOVER is straightforward with the -ER ending.",
+      "authorScore": 0,
+      "authorSkillScore": 0,
+      "authorLuckScore": 0,
+      "botScore": 0,
+      "startWord": "",
+      "startWordStats": "",
+      "averageScore": 3.8,
+      "difficulty": "easy"
+    },
+    "1793": {
+      "wordleNumber": 1793,
+      "date": "2026-05-17",
+      "answer": "BYLAW",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains one vowel: A.",
+          "detail": "A appears in position 4.",
+          "stats": "Single vowel is common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is B.",
+          "detail": "B is a very common starting letter.",
+          "stats": "B ranks 3rd among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters.",
+          "detail": "Every letter appears once: B-Y-L-A-W."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is W.",
+          "detail": "W is an uncommon ending letter.",
+          "stats": "W appears at the end of very few Wordle answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "A rule made by a local authority or organization."
+        }
+      },
+      "meaning": "A rule made by a company or society to control the actions of its members.",
+      "etymologyOrUse": "From 'by' meaning secondary + 'law'.",
+      "authorNotes": "BYLAW has unusual letters Y and W.",
+      "authorScore": 0,
+      "authorSkillScore": 0,
+      "authorLuckScore": 0,
+      "botScore": 0,
+      "startWord": "",
+      "startWordStats": "",
+      "averageScore": 4.6,
+      "difficulty": "hard"
+    },
+    "1794": {
+      "wordleNumber": 1794,
+      "date": "2026-05-18",
+      "answer": "LOATH",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains two vowels: O and A.",
+          "detail": "O appears in position 2, A in position 3.",
+          "stats": "Two vowels is common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is L.",
+          "detail": "L is a common starting letter.",
+          "stats": "L ranks 13th among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters.",
+          "detail": "Every letter appears once: L-O-A-T-H."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is H.",
+          "detail": "H is an uncommon ending letter.",
+          "stats": "H appears at the end of 137 Wordle answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "Reluctant or unwilling to do something."
+        }
+      },
+      "meaning": "Reluctant; unwilling.",
+      "etymologyOrUse": "From Old English 'lāth' meaning hateful or hostile.",
+      "authorNotes": "LOATH ends with -TH which is tricky.",
+      "authorScore": 0,
+      "authorSkillScore": 0,
+      "authorLuckScore": 0,
+      "botScore": 0,
+      "startWord": "",
+      "startWordStats": "",
+      "averageScore": 4.2,
+      "difficulty": "medium"
+    },
+    "1795": {
+      "wordleNumber": 1795,
+      "date": "2026-05-19",
+      "answer": "DUSTY",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains one vowel: U.",
+          "detail": "U appears in position 2.",
+          "stats": "Single vowel is common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is D.",
+          "detail": "D is a common starting letter.",
+          "stats": "D ranks 10th among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters.",
+          "detail": "Every letter appears once: D-U-S-T-Y."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is Y.",
+          "detail": "Y is a common ending letter.",
+          "stats": "Y appears at the end of 364 Wordle answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "Covered with or resembling dust."
+        }
+      },
+      "meaning": "Covered with, full of, or resembling dust.",
+      "etymologyOrUse": "From 'dust' plus the adjective suffix '-y'.",
+      "authorNotes": "DUSTY is straightforward with common -Y ending.",
+      "authorScore": 0,
+      "authorSkillScore": 0,
+      "authorLuckScore": 0,
+      "botScore": 0,
+      "startWord": "",
+      "startWordStats": "",
+      "averageScore": 3.7,
+      "difficulty": "easy"
+    },
+    "1796": {
+      "wordleNumber": 1796,
+      "date": "2026-05-20",
+      "answer": "WRECK",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains one vowel: E.",
+          "detail": "E appears in position 3.",
+          "stats": "Single vowel is common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is W.",
+          "detail": "W is a moderately common starting letter.",
+          "stats": "W ranks 18th among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters.",
+          "detail": "Every letter appears once: W-R-E-C-K."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is K.",
+          "detail": "K is less common as an ending.",
+          "stats": "K appears at the end of 28 answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "The destruction of a ship, car, or building."
+        }
+      },
+      "meaning": "The destruction or disabling of a vehicle or structure.",
+      "etymologyOrUse": "From Middle Dutch 'wrak' meaning something driven ashore.",
+      "authorNotes": "WRECK starts with WR which is uncommon.",
+      "authorScore": 0,
+      "authorSkillScore": 0,
+      "authorLuckScore": 0,
+      "botScore": 0,
+      "startWord": "",
+      "startWordStats": "",
+      "averageScore": 4.3,
+      "difficulty": "medium"
+    },
+    "1797": {
+      "wordleNumber": 1797,
+      "date": "2026-05-21",
+      "answer": "AGREE",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains three vowels: A, E, and E.",
+          "detail": "A in position 1, E in positions 4 and 5.",
+          "stats": "Three vowels is less common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is A.",
+          "detail": "A is a common starting letter.",
+          "stats": "A ranks 7th among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "Yes, the letter E is repeated.",
+          "detail": "The letter E appears twice: A-G-R-E-E."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is E.",
+          "detail": "E is the most common ending letter.",
+          "stats": "E appears at the end of 424 answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "To have the same opinion; to consent."
+        }
+      },
+      "meaning": "To have the same opinion about something; to consent.",
+      "etymologyOrUse": "From Latin 'ad' (to) + 'gratus' (pleasing).",
+      "authorNotes": "AGREE has double E at the end.",
+      "authorScore": 0,
+      "authorSkillScore": 0,
+      "authorLuckScore": 0,
+      "botScore": 0,
+      "startWord": "",
+      "startWordStats": "",
+      "averageScore": 3.9,
+      "difficulty": "easy"
+    },
+    "1798": {
+      "wordleNumber": 1798,
+      "date": "2026-05-22",
+      "answer": "VOCAL",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains two vowels: O and A.",
+          "detail": "O in position 2, A in position 4.",
+          "stats": "Two vowels is common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is V.",
+          "detail": "V is a less common starting letter.",
+          "stats": "V ranks 23rd among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "There are no repeated letters.",
+          "detail": "Every letter appears once: V-O-C-A-L."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is L.",
+          "detail": "L is a common ending.",
+          "stats": "L appears at the end of 155 answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "Relating to the voice; expressing opinions freely."
+        }
+      },
+      "meaning": "Relating to the human voice; expressing opinions freely or loudly.",
+      "etymologyOrUse": "From Latin 'vocalis' meaning speaking or sounding.",
+      "authorNotes": "VOCAL is straightforward.",
+      "authorScore": 0,
+      "authorSkillScore": 0,
+      "authorLuckScore": 0,
+      "botScore": 0,
+      "startWord": "",
+      "startWordStats": "",
+      "averageScore": 3.8,
+      "difficulty": "easy"
+    },
+    "1799": {
+      "wordleNumber": 1799,
+      "date": "2026-05-23",
+      "answer": "CHUCK",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains one vowel: U.",
+          "detail": "U appears in position 3.",
+          "stats": "Single vowel is common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is C.",
+          "detail": "C is a very common starting letter.",
+          "stats": "C ranks 2nd among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "Yes, the letter C is repeated.",
+          "detail": "The letter C appears twice: C-H-U-C-K."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is K.",
+          "detail": "K is less common as an ending.",
+          "stats": "K appears at the end of 28 answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "To throw something carelessly; or a device for holding."
+        }
+      },
+      "meaning": "To throw something carelessly or casually.",
+      "etymologyOrUse": "Probably imitative of the sound of throwing.",
+      "authorNotes": "CHUCK has double C which is unusual.",
+      "authorScore": 0,
+      "authorSkillScore": 0,
+      "authorLuckScore": 0,
+      "botScore": 0,
+      "startWord": "",
+      "startWordStats": "",
+      "averageScore": 4.2,
+      "difficulty": "medium"
+    },
+    "1800": {
+      "wordleNumber": 1800,
+      "date": "2026-05-24",
+      "answer": "NIECE",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains three vowels: I, E, and E.",
+          "detail": "I in position 2, E in positions 4 and 5.",
+          "stats": "Three vowels is less common."
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is N.",
+          "detail": "N is a common starting letter.",
+          "stats": "N ranks 12th among all starting letters."
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "Yes, the letter E is repeated.",
+          "detail": "The letter E appears twice: N-I-E-C-E."
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is E.",
+          "detail": "E is the most common ending letter.",
+          "stats": "E appears at the end of 424 answers."
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "A daughter of one's brother or sister."
+        }
+      },
+      "meaning": "A daughter of one's brother or sister, or of one's brother-in-law or sister-in-law.",
+      "etymologyOrUse": "From Old French 'niece' from Latin 'neptis'.",
+      "authorNotes": "NIECE has three vowels including double E.",
+      "authorScore": 0,
+      "authorSkillScore": 0,
+      "authorLuckScore": 0,
+      "botScore": 0,
+      "startWord": "",
+      "startWordStats": "",
+      "averageScore": 4.0,
+      "difficulty": "medium"
+    },
+    "1801": {
+      "wordleNumber": 1801,
+      "date": "2026-05-25",
+      "answer": "VISIT",
+      "hints": {
+        "vowels": {
+          "title": "Vowels",
+          "content": "This word contains 2 vowel(s).",
+          "detail": "",
+          "stats": ""
+        },
+        "firstLetter": {
+          "title": "First letter",
+          "content": "The first letter is V.",
+          "detail": "",
+          "stats": ""
+        },
+        "repeatedLetters": {
+          "title": "Repeated letters",
+          "content": "Yes",
+          "detail": "",
+          "stats": ""
+        },
+        "endingLetter": {
+          "title": "Ending letter",
+          "content": "The last letter is T.",
+          "detail": "",
+          "stats": ""
+        },
+        "finalClue": {
+          "title": "Final clue",
+          "content": "to pay a call on",
+          "detail": ""
+        }
+      },
+      "meaning": "",
+      "etymologyOrUse": "",
+      "authorNotes": "",
+      "authorScore": 0,
+      "authorSkillScore": 0,
+      "authorLuckScore": 0,
+      "botScore": 0,
+      "startWord": "",
+      "startWordStats": "",
+      "averageScore": 0.0,
+      "difficulty": ""
     }
   }
 }
