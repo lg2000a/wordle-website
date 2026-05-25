@@ -1,119 +1,1016 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Starship Watch — Launch Tracker</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Past Answers - Complete History & Archive | Updated Daily</title>
+    <meta name="description" content="Find all past Wordle answers with our complete searchable database. Browse by date, letter, or difficulty. Updated daily with hints and solutions.">
+    <meta name="keywords" content="wordle answers, wordle history, past wordle words, wordle archive, wordle database, wordle solutions">
+    <meta name="author" content="Wordle Past Answers">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Wordle Past Answers - Complete History">
+    <meta property="og:description" content="Complete database of all past Wordle answers. Search, filter, and explore.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://word-le-answers.com/">
+    <meta property="og:image" content="https://word-le-answers.com/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wordle Past Answers - Complete History">
+    <meta name="twitter:description" content="Complete database of all past Wordle answers">
+    
+    <link rel="canonical" href="https://word-le-answers.com/">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1574975766873033"
+     crossorigin="anonymous"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QHQLHM57Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-8QHQLHM57Y');
+    </script>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Wordle Past Answers",
+        "description": "Complete database of all past Wordle answers with search and filter functionality",
+        "url": "https://word-le-answers.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://word-le-answers.com/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Wordle Past Answers"
+        }
+    }
+    </script>
+    
+    <style>
+        /* ==================== CSS VARIABLES ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Colors */
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #818cf8;
+            --secondary: #8b5cf6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            
+            /* Neutrals */
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+            
+            /* Semantic */
+            --bg-body: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --bg-card: #ffffff;
+            --text-primary: #111827;
+            --text-secondary: #6b7280;
+            --border: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.15);
+            --shadow-xl: 0 20px 40px -5px rgba(0, 0, 0, 0.2);
+            
+            /* Animation */
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ==================== BASE STYLES ==================== */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-body);
+            min-height: 100vh;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ==================== NAVIGATION ==================== */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1.25rem;
+            transition: var(--transition);
+        }
+
+        .nav-brand:hover {
+            color: var(--primary-dark);
+        }
+
+        .nav-brand-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: white;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+            background: var(--gray-50);
+        }
+
+        .nav-links a.active {
+            color: var(--primary);
+            background: var(--gray-100);
+        }
+
+        /* ==================== HEADER ==================== */
+        header {
+            background: white;
+            border-radius: 16px;
+            padding: 48px 40px;
+            margin: 30px 0;
+            box-shadow: var(--shadow-xl);
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 12px;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            color: var(--text-secondary);
+            font-size: 1.125rem;
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+
+        .header-stats {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            color: var(--primary);
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* ==================== SEARCH SECTION ==================== */
+        .search-section {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .search-section h2 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+
+        .search-container {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        input[type="text"], 
+        select {
+            padding: 14px 16px;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: var(--bg-card);
+            color: var(--text-primary);
+        }
+
+        input[type="text"] {
+            flex: 1;
+            min-width: 220px;
+        }
+
+        input[type="text"]:focus, 
+        select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+        }
+
+        select {
+            min-width: 160px;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 14px 32px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+        button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: var(--shadow);
+        }
+
+        /* ==================== TABS ==================== */
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--border);
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: none;
+            color: var(--text-secondary);
+            border: none;
+            border-bottom: 3px solid transparent;
+            padding: 14px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            margin-bottom: -2px;
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        .tab-btn:hover:not(.active) {
+            color: var(--primary-light);
+        }
+
+        /* ==================== INFO BOX ==================== */
+        .info-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid var(--warning);
+            padding: 18px 20px;
+            border-radius: 10px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: start;
+            gap: 12px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .info-box-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .info-box-content {
+            flex: 1;
+        }
+
+        .info-box-content strong {
+            color: var(--gray-800);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .info-box-content p {
+            color: var(--gray-700);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* ==================== WORD CARDS - ENHANCED ==================== */
+        .words-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .word-card {
+            background: white;
+            padding: 20px 16px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid var(--border);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .word-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+
+        .word-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .word-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .word-card .word {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 8px;
+            letter-spacing: 0.02em;
+        }
+
+        .word-card .date {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .word-card .wordle-number {
+            font-size: 0.75rem;
+            color: var(--gray-400);
+            margin-top: 4px;
+        }
+
+        /* ==================== ALPHABET INDEX ==================== */
+        .alphabet-index {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .letter-btn {
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            font-weight: 700;
+            font-size: 1rem;
+            border-radius: 8px;
+            background: white;
+            border: 2px solid var(--border);
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--text-primary);
+        }
+
+        .letter-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: scale(1.1);
+        }
+
+        .letter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* ==================== WORDS LIST ==================== */
+        .words-list {
+            columns: 3;
+            column-gap: 32px;
+            margin-top: 24px;
+        }
+
+        .words-list-item {
+            break-inside: avoid;
+            margin-bottom: 12px;
+            padding: 12px 16px;
+            background: var(--gray-50);
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .words-list-item:hover {
+            background: white;
+            border-color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .words-list-item .word {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .words-list-item .date {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        /* ==================== BACK TO TOP ==================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            width: 56px;
+            height: 56px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            margin-top: 80px;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-text {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            header {
+                padding: 32px 24px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .header-stats {
+                gap: 32px;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .search-section {
+                padding: 24px 20px;
+            }
+
+            .search-container {
+                flex-direction: column;
+            }
+
+            input[type="text"],
+            select,
+            button {
+                width: 100%;
+            }
+
+            .words-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 12px;
+            }
+
+            .words-list {
+                columns: 1;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 48px;
+                height: 48px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            header {
+                padding: 24px 16px;
+                margin: 20px 0;
+            }
+
+            .search-section {
+                padding: 20px 16px;
+            }
+
+            .words-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+
+            .alphabet-index {
+                gap: 4px;
+            }
+
+            .letter-btn {
+                width: 38px;
+                height: 38px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* ==================== ANIMATIONS ==================== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* ==================== LOADING STATE ==================== */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            color: var(--text-secondary);
+        }
+
+        .loading::after {
+            content: '...';
+            animation: loading 1.5s steps(4, end) infinite;
+        }
+
+        @keyframes loading {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <div class="nav-brand-icon">W</div>
+                <span>Wordle Answers</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/today">Today's Answer</a></li>
+                <li><a href="/archive">Archive</a></li>
+                <li><a href="/stats">Statistics</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<div class="starfield" id="starfield"></div>
+    <div class="container">
+        <!-- Header -->
+        <header class="fade-in-up">
+            <h1>🎯 Wordle Past Answers</h1>
+            <p class="tagline">Complete searchable database of all past Wordle solutions</p>
+            
+            <div class="header-stats">
+                <div class="stat">
+                    <div class="stat-number" id="totalAnswers">1,801</div>
+                    <div class="stat-label">Total Answers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="todaysNumber">1801</div>
+                    <div class="stat-label">Today's Wordle</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">May 25</div>
+                    <div class="stat-label">Last Updated</div>
+                </div>
+            </div>
+        </header>
 
-<div class="lang-banner lang-banner-en">
-  <span class="lang-banner-label">Viewing English version</span>
-  <a href="zh.html" class="lang-switch-btn">
-    <span>🌐</span>
-    切换到中文
-    <span class="lang-switch-arrow">→</span>
-  </a>
-</div>
+        <!-- Search Section -->
+        <div class="search-section fade-in-up">
+            <h2>🔍 Search Past Answers</h2>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by word, date, or Wordle #...">
+                <select id="letterFilter">
+                    <option value="">All Letters</option>
+                    <option value="A">Starts with A</option>
+                    <option value="B">Starts with B</option>
+                    <option value="C">Starts with C</option>
+                    <!-- Add more options -->
+                </select>
+                <select id="sortFilter">
+                    <option value="recent">Most Recent</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="alpha">Alphabetical</option>
+                </select>
+                <button onclick="searchAnswers()">Search</button>
+            </div>
 
-<header>
-  <div class="logo">
-    <span class="logo-mark">▲</span>
-    <span class="logo-text">STARSHIP<span class="logo-sub">WATCH</span></span>
-  </div>
-  <div class="header-status">
-    <span class="pulse-dot" id="statusDot"></span>
-    <span id="statusText">Connecting...</span>
-  </div>
-</header>
+            <!-- Info Box -->
+            <div class="info-box">
+                <span class="info-box-icon">💡</span>
+                <div class="info-box-content">
+                    <strong>Looking for today's answer?</strong>
+                    <p>Today's Wordle answer is excluded from this page to avoid spoilers. Visit our <a href="/today" style="color: var(--primary); font-weight: 600;">Today's Answer page</a> if you need help.</p>
+                </div>
+            </div>
 
-<main>
-  <section class="hero">
-    <div class="hero-label">Next Launch</div>
-    <h1 class="mission-name" id="missionName">—</h1>
-    <div class="mission-meta">
-      <span id="rocketName">—</span>
-      <span class="sep">·</span>
-      <span id="padName">—</span>
-    </div>
-    <div class="countdown" id="countdown">
-      <div class="cd-block"><span class="cd-num" id="cd-d">--</span><span class="cd-label">days</span></div>
-      <div class="cd-sep">:</div>
-      <div class="cd-block"><span class="cd-num" id="cd-h">--</span><span class="cd-label">hrs</span></div>
-      <div class="cd-sep">:</div>
-      <div class="cd-block"><span class="cd-num" id="cd-m">--</span><span class="cd-label">min</span></div>
-      <div class="cd-sep">:</div>
-      <div class="cd-block"><span class="cd-num" id="cd-s">--</span><span class="cd-label">sec</span></div>
-    </div>
-    <div class="launch-time-row">
-      <span class="launch-time-label">NET</span>
-      <span id="launchTimeLocal">—</span>
-      <span class="launch-time-label" style="margin-left:1rem">UTC</span>
-      <span id="launchTimeUTC">—</span>
-    </div>
-    <div class="status-badge-row">
-      <span class="status-badge" id="statusBadge">—</span>
-      <span class="prob-badge" id="probBadge"></span>
-    </div>
-    <div class="hero-links">
-      <a id="linkNSF" href="https://nextspaceflight.com" target="_blank" class="ext-btn">NextSpaceflight ↗</a>
-      <a id="linkSFN" href="https://spaceflightnow.com" target="_blank" class="ext-btn">SpaceFlightNow ↗</a>
-      <a id="linkYT"  href="https://www.youtube.com/@SpaceX" target="_blank" class="ext-btn live-btn">▶ SpaceX Live ↗</a>
-    </div>
-  </section>
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('grid')">Grid View</button>
+                <button class="tab-btn" onclick="switchTab('list')">List View</button>
+                <button class="tab-btn" onclick="switchTab('alphabet')">By Letter</button>
+            </div>
 
-  <section class="info-grid">
-    <div class="info-card">
-      <div class="info-card-title">Mission Brief</div>
-      <div class="info-card-body" id="missionDesc">Loading...</div>
-    </div>
-    <div class="info-card">
-      <div class="info-card-title">Launch Pad</div>
-      <div class="info-card-body" id="padInfo">—</div>
-      <div class="info-card-title" style="margin-top:1.2rem">Vehicle</div>
-      <div class="info-card-body" id="rocketInfo">—</div>
-    </div>
-    <div class="info-card">
-      <div class="info-card-title">Quick Links</div>
-      <div class="links-list">
-        <a href="https://nextspaceflight.com/launches" target="_blank" class="link-item">📋 All Launches</a>
-        <a href="https://www.spacex.com/launches" target="_blank" class="link-item">🚀 SpaceX Official</a>
-        <a href="https://en.wikipedia.org/wiki/Starship_(rocket)" target="_blank" class="link-item">📖 Starship on Wikipedia</a>
-        <a href="https://spaceflightnow.com/launch-schedule/" target="_blank" class="link-item">🗓 Launch Schedule</a>
-        <a href="https://www.nasaspaceflight.com" target="_blank" class="link-item">🛰 NASASpaceflight</a>
-      </div>
-    </div>
-  </section>
+            <!-- Grid View (Default) -->
+            <div id="gridView" class="words-grid">
+                <!-- Sample cards - will be populated by JavaScript -->
+                <div class="word-card">
+                    <div class="word">TRAIN</div>
+                    <div class="date">May 14, 2026</div>
+                    <div class="wordle-number">#1790</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">PIANO</div>
+                    <div class="date">May 13, 2026</div>
+                    <div class="wordle-number">#1789</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">GHOST</div>
+                    <div class="date">May 12, 2026</div>
+                    <div class="wordle-number">#1788</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">LIGHT</div>
+                    <div class="date">May 11, 2026</div>
+                    <div class="wordle-number">#1787</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">BREAD</div>
+                    <div class="date">May 10, 2026</div>
+                    <div class="wordle-number">#1786</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">CROWN</div>
+                    <div class="date">May 9, 2026</div>
+                    <div class="wordle-number">#1785</div>
+                </div>
+                <!-- More cards will be loaded here -->
+            </div>
 
-  <section class="upcoming">
-    <div class="section-header">
-      <h2>Upcoming Launches</h2>
-      <span class="section-sub">Data from Launch Library 2</span>
-    </div>
-    <div id="upcomingList" class="launch-list">
-      <div class="loading-row">Loading...</div>
-    </div>
-  </section>
-</main>
+            <!-- List View (Hidden by default) -->
+            <div id="listView" class="words-list" style="display: none;">
+                <div class="words-list-item">
+                    <span class="word">TRAIN</span>
+                    <span class="date">May 14, 2026</span>
+                </div>
+                <!-- More items will be loaded here -->
+            </div>
 
-<footer>
-  <span>Data: <a href="https://ll.thespacedevs.com" target="_blank">Launch Library 2</a> · <a href="https://api.spacexdata.com" target="_blank">SpaceX Data API</a></span>
-  <span id="lastUpdated"></span>
-</footer>
+            <!-- Alphabet View (Hidden by default) -->
+            <div id="alphabetView" style="display: none;">
+                <div class="alphabet-index">
+                    <button class="letter-btn" onclick="filterByLetter('A')">A</button>
+                    <button class="letter-btn" onclick="filterByLetter('B')">B</button>
+                    <button class="letter-btn" onclick="filterByLetter('C')">C</button>
+                    <button class="letter-btn" onclick="filterByLetter('D')">D</button>
+                    <button class="letter-btn" onclick="filterByLetter('E')">E</button>
+                    <button class="letter-btn" onclick="filterByLetter('F')">F</button>
+                    <button class="letter-btn" onclick="filterByLetter('G')">G</button>
+                    <button class="letter-btn" onclick="filterByLetter('H')">H</button>
+                    <button class="letter-btn" onclick="filterByLetter('I')">I</button>
+                    <button class="letter-btn" onclick="filterByLetter('J')">J</button>
+                    <button class="letter-btn" onclick="filterByLetter('K')">K</button>
+                    <button class="letter-btn" onclick="filterByLetter('L')">L</button>
+                    <button class="letter-btn" onclick="filterByLetter('M')">M</button>
+                    <button class="letter-btn" onclick="filterByLetter('N')">N</button>
+                    <button class="letter-btn" onclick="filterByLetter('O')">O</button>
+                    <button class="letter-btn" onclick="filterByLetter('P')">P</button>
+                    <button class="letter-btn" onclick="filterByLetter('Q')">Q</button>
+                    <button class="letter-btn" onclick="filterByLetter('R')">R</button>
+                    <button class="letter-btn" onclick="filterByLetter('S')">S</button>
+                    <button class="letter-btn" onclick="filterByLetter('T')">T</button>
+                    <button class="letter-btn" onclick="filterByLetter('U')">U</button>
+                    <button class="letter-btn" onclick="filterByLetter('V')">V</button>
+                    <button class="letter-btn" onclick="filterByLetter('W')">W</button>
+                    <button class="letter-btn" onclick="filterByLetter('X')">X</button>
+                    <button class="letter-btn" onclick="filterByLetter('Y')">Y</button>
+                    <button class="letter-btn" onclick="filterByLetter('Z')">Z</button>
+                </div>
+                <div id="alphabetResults" class="words-grid">
+                    <!-- Results will be shown here -->
+                </div>
+            </div>
+        </div>
+    </div>
 
-<script>
-window.LOCALE = {
-  connecting: 'Connecting...', updated: 'Updated', noData: 'No data',
-  loading: 'Loading...', fallback: 'Using fallback source', fetchFail: 'Fetch failed, retrying soon',
-  noDesc: 'No mission description available.', fallbackDesc: 'No description (SpaceX Data API)',
-  dateLocale: 'en-US', timeLabels: ['days','hrs','min','sec'],
-};
-</script>
-<script src="app.js"></script>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        ↑
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text">© 2026 Wordle Past Answers. Not affiliated with NYT or Wordle.</p>
+            <ul class="footer-links">
+                <li><a href="/about">About</a></li>
+                <li><a href="/privacy">Privacy</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Sample data structure - replace with actual data
+        const wordleAnswers = [
+            { number: 1790, word: 'TRAIN', date: '2026-05-14' },
+            { number: 1789, word: 'PIANO', date: '2026-05-13' },
+            { number: 1788, word: 'GHOST', date: '2026-05-12' },
+            { number: 1787, word: 'LIGHT', date: '2026-05-11' },
+            { number: 1786, word: 'BREAD', date: '2026-05-10' },
+            { number: 1785, word: 'CROWN', date: '2026-05-09' },
+            // Add more data here
+        ];
+
+        // Tab switching
+        function switchTab(tab) {
+            // Hide all views
+            document.getElementById('gridView').style.display = 'none';
+            document.getElementById('listView').style.display = 'none';
+            document.getElementById('alphabetView').style.display = 'none';
+
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected view and activate tab
+            if (tab === 'grid') {
+                document.getElementById('gridView').style.display = 'grid';
+                event.target.classList.add('active');
+            } else if (tab === 'list') {
+                document.getElementById('listView').style.display = 'block';
+                event.target.classList.add('active');
+            } else if (tab === 'alphabet') {
+                document.getElementById('alphabetView').style.display = 'block';
+                event.target.classList.add('active');
+            }
+        }
+
+        // Search functionality
+        function searchAnswers() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            // Implement search logic here
+            console.log('Searching for:', query);
+        }
+
+        // Filter by letter
+        function filterByLetter(letter) {
+            const results = wordleAnswers.filter(a => a.word.startsWith(letter));
+            const resultsDiv = document.getElementById('alphabetResults');
+            
+            // Update UI
+            document.querySelectorAll('.letter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Display results
+            resultsDiv.innerHTML = results.map(a => `
+                <div class="word-card">
+                    <div class="word">${a.word}</div>
+                    <div class="date">${formatDate(a.date)}</div>
+                    <div class="wordle-number">#${a.number}</div>
+                </div>
+            `).join('');
+        }
+
+        // Format date
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'short', 
+                day: 'numeric' 
+            });
+        }
+
+        // Back to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', () => {
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // Load more data on scroll (infinite scroll)
+        let page = 1;
+        window.addEventListener('scroll', () => {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) {
+                // Load more data
+                loadMoreAnswers();
+            }
+        });
+
+        function loadMoreAnswers() {
+            // Implement pagination logic here
+            console.log('Loading page:', ++page);
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Wordle Answers loaded');
+            // Load initial data
+        });
+    </script>
 </body>
 </html>
