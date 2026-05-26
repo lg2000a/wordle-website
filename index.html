@@ -520,6 +520,71 @@
             color: var(--text-secondary);
         }
 
+        /* ==================== FEEDBACK SECTION ==================== */
+        .feedback-section {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: 16px;
+            padding: 48px 40px;
+            margin: 60px 0 40px 0;
+            box-shadow: var(--shadow-lg);
+            border: 2px solid #bae6fd;
+        }
+
+        .feedback-section h3 {
+            color: var(--primary);
+            font-size: 1.75rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .feedback-section p {
+            color: var(--text-primary);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .feedback-section p strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .feedback-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 40px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: var(--shadow-lg);
+            margin-top: 12px;
+        }
+
+        .feedback-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .feedback-button:active {
+            transform: translateY(0);
+        }
+
+        .feedback-cta {
+            text-align: center;
+            margin-top: 32px;
+        }
+
         /* ==================== BACK TO TOP ==================== */
         .back-to-top {
             position: fixed;
@@ -556,7 +621,7 @@
 
         /* ==================== FOOTER ==================== */
         footer {
-            margin-top: 80px;
+            margin-top: 40px;
             padding: 40px 20px;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
@@ -641,6 +706,19 @@
                 columns: 1;
             }
 
+            .feedback-section {
+                padding: 32px 24px;
+                margin: 40px 0 30px 0;
+            }
+
+            .feedback-section h3 {
+                font-size: 1.5rem;
+            }
+
+            .feedback-section p {
+                font-size: 1rem;
+            }
+
             .back-to-top {
                 bottom: 20px;
                 right: 20px;
@@ -686,6 +764,10 @@
                 width: 38px;
                 height: 38px;
                 font-size: 0.9rem;
+            }
+
+            .feedback-section {
+                padding: 24px 16px;
             }
         }
 
@@ -802,7 +884,7 @@
                 <button class="tab-btn" onclick="switchTab('alphabet')">By Letter</button>
             </div>
 
-            <!-- Grid View (Default) - 显示 #1792-#1800 的完整答案 -->
+            <!-- Grid View (Default) -->
             <div id="gridView" class="words-grid">
                 <div class="word-card">
                     <div class="word">SHOUT</div>
@@ -987,6 +1069,39 @@
                 </div>
             </div>
         </div>
+
+        <!-- Feedback Section -->
+        <section class="feedback-section fade-in-up">
+            <h3>💬 Help Make This Better</h3>
+            <p>
+                This website was created independently by me as a personal project. 
+                My original goal was simply to make things a little more convenient 
+                for fellow Wordle fans.
+            </p>
+            <p>
+                Because my personal ability is limited, the website still has many 
+                problems and lacks some useful features. I do not plan to make it 
+                overly complicated. Instead, I hope to focus on one or two truly 
+                practical features and make them as useful as possible.
+            </p>
+            <p>
+                So I would really like to hear from other Wordle fans: 
+                <strong>What feature would you most like to see added?</strong> 
+                Among the current problems on the site, 
+                <strong>which one do you hope I fix first?</strong>
+            </p>
+            <p>
+                If you are willing, please feel free to send me an email. 
+                Your feedback is very important to this small website.
+            </p>
+            
+            <div class="feedback-cta">
+                <a href="mailto:wordlearchivst@hotmail.com?subject=Feedback%20for%20Wordle%20Past%20Answers%20Website&body=Hi%2C%0D%0A%0D%0AI%20have%20some%20feedback%20about%20the%20Wordle%20Past%20Answers%20website%3A%0D%0A%0D%0A" 
+                   class="feedback-button">
+                    📧 Send Your Feedback
+                </a>
+            </div>
+        </section>
     </div>
 
     <!-- Back to Top Button -->
@@ -1008,7 +1123,7 @@
 
     <!-- JavaScript -->
     <script>
-        // Complete data structure with #1792-#1800
+        // Complete data structure
         const wordleAnswers = [
             { number: 1800, word: 'SHOUT', date: '2026-05-24' },
             { number: 1799, word: 'BEACH', date: '2026-05-23' },
@@ -1058,7 +1173,6 @@
         // Search functionality
         function searchAnswers() {
             const query = document.getElementById('searchInput').value.toLowerCase();
-            // Implement search logic here
             console.log('Searching for:', query);
         }
 
@@ -1108,24 +1222,21 @@
             }
         });
 
-        // Load more data on scroll (infinite scroll)
+        // Load more data on scroll
         let page = 1;
         window.addEventListener('scroll', () => {
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 500) {
-                // Load more data
                 loadMoreAnswers();
             }
         });
 
         function loadMoreAnswers() {
-            // Implement pagination logic here
             console.log('Loading page:', ++page);
         }
 
         // Initialize page
         document.addEventListener('DOMContentLoaded', () => {
-            console.log('Wordle Answers loaded with complete data #1782-#1800');
-            // Load initial data
+            console.log('Wordle Answers loaded with feedback section');
         });
     </script>
 </body>
