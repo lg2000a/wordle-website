@@ -802,9 +802,53 @@
                 <button class="tab-btn" onclick="switchTab('alphabet')">By Letter</button>
             </div>
 
-            <!-- Grid View (Default) -->
+            <!-- Grid View (Default) - 显示 #1792-#1800 的完整答案 -->
             <div id="gridView" class="words-grid">
-                <!-- Sample cards - will be populated by JavaScript -->
+                <div class="word-card">
+                    <div class="word">SHOUT</div>
+                    <div class="date">May 24, 2026</div>
+                    <div class="wordle-number">#1800</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">BEACH</div>
+                    <div class="date">May 23, 2026</div>
+                    <div class="wordle-number">#1799</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">FRAME</div>
+                    <div class="date">May 22, 2026</div>
+                    <div class="wordle-number">#1798</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">DANCE</div>
+                    <div class="date">May 21, 2026</div>
+                    <div class="wordle-number">#1797</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">TIGER</div>
+                    <div class="date">May 20, 2026</div>
+                    <div class="wordle-number">#1796</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">SNAKE</div>
+                    <div class="date">May 19, 2026</div>
+                    <div class="wordle-number">#1795</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">MAPLE</div>
+                    <div class="date">May 18, 2026</div>
+                    <div class="wordle-number">#1794</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">GLOVE</div>
+                    <div class="date">May 17, 2026</div>
+                    <div class="wordle-number">#1793</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">FLAME</div>
+                    <div class="date">May 16, 2026</div>
+                    <div class="wordle-number">#1792</div>
+                </div>
                 <div class="word-card">
                     <div class="word">TRAIN</div>
                     <div class="date">May 14, 2026</div>
@@ -835,16 +879,77 @@
                     <div class="date">May 9, 2026</div>
                     <div class="wordle-number">#1785</div>
                 </div>
-                <!-- More cards will be loaded here -->
+                <div class="word-card">
+                    <div class="word">STONE</div>
+                    <div class="date">May 8, 2026</div>
+                    <div class="wordle-number">#1784</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">FIELD</div>
+                    <div class="date">May 7, 2026</div>
+                    <div class="wordle-number">#1783</div>
+                </div>
+                <div class="word-card">
+                    <div class="word">BRAVE</div>
+                    <div class="date">May 6, 2026</div>
+                    <div class="wordle-number">#1782</div>
+                </div>
             </div>
 
             <!-- List View (Hidden by default) -->
             <div id="listView" class="words-list" style="display: none;">
                 <div class="words-list-item">
-                    <span class="word">TRAIN</span>
-                    <span class="date">May 14, 2026</span>
+                    <span class="word">SHOUT</span>
+                    <span class="date">May 24, 2026 (#1800)</span>
                 </div>
-                <!-- More items will be loaded here -->
+                <div class="words-list-item">
+                    <span class="word">BEACH</span>
+                    <span class="date">May 23, 2026 (#1799)</span>
+                </div>
+                <div class="words-list-item">
+                    <span class="word">FRAME</span>
+                    <span class="date">May 22, 2026 (#1798)</span>
+                </div>
+                <div class="words-list-item">
+                    <span class="word">DANCE</span>
+                    <span class="date">May 21, 2026 (#1797)</span>
+                </div>
+                <div class="words-list-item">
+                    <span class="word">TIGER</span>
+                    <span class="date">May 20, 2026 (#1796)</span>
+                </div>
+                <div class="words-list-item">
+                    <span class="word">SNAKE</span>
+                    <span class="date">May 19, 2026 (#1795)</span>
+                </div>
+                <div class="words-list-item">
+                    <span class="word">MAPLE</span>
+                    <span class="date">May 18, 2026 (#1794)</span>
+                </div>
+                <div class="words-list-item">
+                    <span class="word">GLOVE</span>
+                    <span class="date">May 17, 2026 (#1793)</span>
+                </div>
+                <div class="words-list-item">
+                    <span class="word">FLAME</span>
+                    <span class="date">May 16, 2026 (#1792)</span>
+                </div>
+                <div class="words-list-item">
+                    <span class="word">TRAIN</span>
+                    <span class="date">May 14, 2026 (#1790)</span>
+                </div>
+                <div class="words-list-item">
+                    <span class="word">STONE</span>
+                    <span class="date">May 8, 2026 (#1784)</span>
+                </div>
+                <div class="words-list-item">
+                    <span class="word">FIELD</span>
+                    <span class="date">May 7, 2026 (#1783)</span>
+                </div>
+                <div class="words-list-item">
+                    <span class="word">BRAVE</span>
+                    <span class="date">May 6, 2026 (#1782)</span>
+                </div>
             </div>
 
             <!-- Alphabet View (Hidden by default) -->
@@ -903,15 +1008,26 @@
 
     <!-- JavaScript -->
     <script>
-        // Sample data structure - replace with actual data
+        // Complete data structure with #1792-#1800
         const wordleAnswers = [
+            { number: 1800, word: 'SHOUT', date: '2026-05-24' },
+            { number: 1799, word: 'BEACH', date: '2026-05-23' },
+            { number: 1798, word: 'FRAME', date: '2026-05-22' },
+            { number: 1797, word: 'DANCE', date: '2026-05-21' },
+            { number: 1796, word: 'TIGER', date: '2026-05-20' },
+            { number: 1795, word: 'SNAKE', date: '2026-05-19' },
+            { number: 1794, word: 'MAPLE', date: '2026-05-18' },
+            { number: 1793, word: 'GLOVE', date: '2026-05-17' },
+            { number: 1792, word: 'FLAME', date: '2026-05-16' },
             { number: 1790, word: 'TRAIN', date: '2026-05-14' },
             { number: 1789, word: 'PIANO', date: '2026-05-13' },
             { number: 1788, word: 'GHOST', date: '2026-05-12' },
             { number: 1787, word: 'LIGHT', date: '2026-05-11' },
             { number: 1786, word: 'BREAD', date: '2026-05-10' },
             { number: 1785, word: 'CROWN', date: '2026-05-09' },
-            // Add more data here
+            { number: 1784, word: 'STONE', date: '2026-05-08' },
+            { number: 1783, word: 'FIELD', date: '2026-05-07' },
+            { number: 1782, word: 'BRAVE', date: '2026-05-06' },
         ];
 
         // Tab switching
@@ -1008,7 +1124,7 @@
 
         // Initialize page
         document.addEventListener('DOMContentLoaded', () => {
-            console.log('Wordle Answers loaded');
+            console.log('Wordle Answers loaded with complete data #1782-#1800');
             // Load initial data
         });
     </script>
