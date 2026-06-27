@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://word-le-answers.com/sitemap.xml
