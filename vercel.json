@@ -1,5 +1,19 @@
 {
   "buildCommand": "",
   "outputDirectory": ".",
-  "framework": null
+  "framework": null,
+  "rewrites": [
+    { "source": "/today",   "destination": "/today.html"   },
+    { "source": "/archive", "destination": "/index.html"   },
+    { "source": "/stats",   "destination": "/stats.html"   },
+    { "source": "/about",   "destination": "/about.html"   },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/contact", "destination": "/contact.html" }
+  ],
+  "headers": [
+    {
+      "source": "/data/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
+    }
+  ]
 }
