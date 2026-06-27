@@ -1,0 +1,145 @@
+name: Update Wordle Answer Database
+
+on:
+  schedule:
+    # Beijing Time 08:00 = UTC 00:00
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-wordle-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Fetch yesterday's NYT Wordle answer and update JSON
+        id: update
+        shell: bash
+        run: |
+          python <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.request
+          from datetime import datetime, timedelta
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          from collections import OrderedDict
+
+          DATA_FILE = Path("data/wordle-answers-database.json")
+          API_URL_TEMPLATE = "https://www.nytimes.com/svc/wordle/v2/{date}.json"
+
+          if not DATA_FILE.exists():
+              print(f"ERROR: Data file not found: {DATA_FILE}", file=sys.stderr)
+              sys.exit(1)
+
+          # 取美东时间昨天的答案，不收录当天避免剧透
+          eastern_now = datetime.now(ZoneInfo("America/New_York"))
+          target_date = (eastern_now.date() - timedelta(days=1)).isoformat()
+
+          api_url = API_URL_TEMPLATE.format(date=target_date)
+          print(f"Fetching NYT Wordle data for Eastern yesterday: {target_date}")
+          print(f"API URL: {api_url}")
+
+          req = urllib.request.Request(
+              api_url,
+              headers={
+                  "User-Agent": "Mozilla/5.0 GitHubActions WordleDataUpdater/1.0",
+                  "Accept": "application/json",
+              },
+          )
+
+          try:
+              with urllib.request.urlopen(req, timeout=20) as response:
+                  raw = response.read().decode("utf-8")
+                  nyt_data = json.loads(raw)
+          except Exception as exc:
+              print(f"ERROR: Failed to fetch NYT Wordle API: {exc}", file=sys.stderr)
+              sys.exit(1)
+
+          answer = nyt_data.get("solution")
+          wordle_number = nyt_data.get("days_since_launch") or nyt_data.get("id")
+          date = nyt_data.get("print_date") or target_date
+
+          if not answer or wordle_number is None:
+              print("ERROR: NYT API response missing required fields.", file=sys.stderr)
+              print(json.dumps(nyt_data, ensure_ascii=False, indent=2), file=sys.stderr)
+              sys.exit(1)
+
+          answer = str(answer).upper()
+          wordle_number = int(wordle_number)
+          wordle_key = str(wordle_number)
+
+          with DATA_FILE.open("r", encoding="utf-8-sig") as f:
+              database = json.load(f, object_pairs_hook=OrderedDict)
+
+          if "metadata" not in database:
+              database["metadata"] = OrderedDict()
+          if "answers" not in database:
+              database["answers"] = OrderedDict()
+
+          answers = database["answers"]
+
+          if wordle_key in answers:
+              print(f"Wordle #{wordle_number} already exists. No update needed.")
+              with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+                  f.write("changed=false\n")
+              sys.exit(0)
+
+          new_entry = OrderedDict()
+          new_entry["wordleNumber"] = wordle_number
+          new_entry["date"] = date
+          new_entry["answer"] = answer
+          new_entry["difficulty"] = "medium"
+
+          answers[wordle_key] = new_entry
+
+          sorted_answers = OrderedDict(
+              sorted(answers.items(), key=lambda item: int(item[0]))
+          )
+
+          metadata = database["metadata"]
+          metadata["last_updated"] = date
+          metadata["total_answers"] = len(sorted_answers)
+
+          output_database = OrderedDict()
+          output_database["metadata"] = metadata
+          output_database["answers"] = sorted_answers
+
+          with DATA_FILE.open("w", encoding="utf-8", newline="\n") as f:
+              json.dump(output_database, f, ensure_ascii=False, indent=2)
+              f.write("\n")
+
+          print(f"Added Wordle #{wordle_number}: {answer}")
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write("changed=true\n")
+              f.write(f"wordle_number={wordle_number}\n")
+              f.write(f"answer={answer}\n")
+          PY
+
+      - name: Commit and push changes
+        if: steps.update.outputs.changed == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/wordle-answers-database.json
+          git commit -m "data: add #${{ steps.update.outputs.wordle_number }} ${{ steps.update.outputs.answer }}"
+          git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
+
+      - name: No changes
+        if: steps.update.outputs.changed == 'false'
+        run: echo "No new Wordle answer to commit."
