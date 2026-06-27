@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Wordle Past Answers – word-le-answers.com</title>
+    <meta name="description" content="About word-le-answers.com — an independent archive of every NYT Wordle answer since 2025, with daily automatic updates.">
+    <link rel="canonical" href="https://word-le-answers.com/about">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%236366f1'/><text y='.9em' font-size='80' x='10' fill='white' font-weight='bold'>W</text></svg>">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1574975766873033" crossorigin="anonymous"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QHQLHM57Y"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-8QHQLHM57Y');</script>
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        :root{
+            --primary:#6366f1;--primary-dark:#4f46e5;--primary-light:#818cf8;
+            --gray-50:#f9fafb;--gray-100:#f3f4f6;--gray-200:#e5e7eb;
+            --gray-400:#9ca3af;--gray-500:#6b7280;--gray-600:#4b5563;
+            --gray-700:#374151;--gray-800:#1f2937;
+            --bg-body:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+            --text-primary:#111827;--text-secondary:#6b7280;--border:#e5e7eb;
+            --shadow-sm:0 1px 2px rgba(0,0,0,.05);--shadow-lg:0 10px 25px -3px rgba(0,0,0,.15);
+            --transition:all 0.3s cubic-bezier(0.4,0,0.2,1);
+        }
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg-body);min-height:100vh;color:var(--text-primary);line-height:1.6;}
+        .container{max-width:860px;margin:0 auto;padding:0 20px;}
+
+        nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:var(--shadow-sm);}
+        .nav-container{max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:64px;}
+        .nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--primary);font-weight:700;font-size:1.25rem;}
+        .nav-brand-icon{display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--primary);color:white;border-radius:8px;font-weight:700;font-size:1.2rem;}
+        .nav-links{display:flex;align-items:center;gap:24px;list-style:none;}
+        .nav-links a{color:var(--text-secondary);text-decoration:none;font-weight:500;font-size:.95rem;padding:8px 12px;border-radius:6px;transition:var(--transition);}
+        .nav-links a:hover{color:var(--primary);background:var(--gray-50);}
+        .nav-links a.active{color:var(--primary);background:var(--gray-100);}
+        .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;border:none;background:none;border-radius:6px;}
+        .hamburger span{display:block;width:24px;height:2px;background:var(--gray-700);border-radius:2px;transition:var(--transition);}
+        .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+        .hamburger.open span:nth-child(2){opacity:0;}
+        .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
+        .mobile-menu{display:none;background:white;border-top:1px solid var(--border);box-shadow:var(--shadow-lg);}
+        .mobile-menu.open{display:block;}
+        .mobile-menu ul{list-style:none;padding:12px 20px;}
+        .mobile-menu ul li{border-bottom:1px solid var(--gray-100);}
+        .mobile-menu ul li:last-child{border:none;}
+        .mobile-menu ul a{display:block;padding:14px 0;color:var(--text-primary);text-decoration:none;font-weight:500;}
+
+        .policy-card{background:white;border-radius:16px;padding:48px 56px;margin:30px 0 40px;box-shadow:var(--shadow-lg);}
+        .policy-header{margin-bottom:36px;padding-bottom:28px;border-bottom:2px solid var(--gray-100);}
+        .policy-header h1{color:var(--primary);font-size:2rem;font-weight:800;margin-bottom:8px;}
+        .policy-meta{font-size:.9rem;color:var(--gray-400);}
+
+        h2{font-size:1.1rem;font-weight:700;color:var(--gray-800);margin:32px 0 12px;padding-left:14px;border-left:4px solid var(--primary);}
+        p{color:var(--gray-600);margin-bottom:14px;font-size:.975rem;line-height:1.8;}
+        ul{margin:10px 0 14px 20px;}
+        ul li{color:var(--gray-600);font-size:.975rem;line-height:1.8;margin-bottom:6px;}
+        a{color:var(--primary);}
+        a:hover{color:var(--primary-dark);}
+
+        .highlight-box{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:18px 20px;margin:16px 0;}
+        .highlight-box p{margin:0;}
+
+        .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0;}
+        .stat-item{background:linear-gradient(135deg,#ede9fe,#ddd6fe);border-radius:12px;padding:20px;text-align:center;}
+        .stat-num{font-size:1.8rem;font-weight:800;color:var(--primary);}
+        .stat-lbl{font-size:.8rem;color:var(--gray-500);margin-top:4px;font-weight:600;}
+
+        .cta-box{background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:12px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+        .cta-box p{color:rgba(255,255,255,.9);margin:0;font-size:.95rem;}
+        .cta-btn{display:inline-block;background:white;color:var(--primary);padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.9rem;white-space:nowrap;transition:var(--transition);}
+        .cta-btn:hover{background:var(--gray-100);color:var(--primary-dark);}
+
+        footer{padding:40px 20px;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-top:1px solid var(--border);}
+        .footer-container{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;}
+        .footer-text{color:var(--text-secondary);font-size:.875rem;}
+        .footer-links{display:flex;gap:24px;list-style:none;}
+        .footer-links a{color:var(--text-secondary);text-decoration:none;font-size:.875rem;font-weight:500;transition:var(--transition);}
+        .footer-links a:hover{color:var(--primary);}
+
+        @media(max-width:768px){
+            .nav-links{display:none;}.hamburger{display:flex;}
+            .policy-card{padding:28px 20px;}
+            .stat-row{grid-template-columns:1fr 1fr;}
+            .footer-container{flex-direction:column;text-align:center;}
+            .footer-links{flex-direction:column;align-items:center;gap:12px;}
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="/" class="nav-brand"><div class="nav-brand-icon">W</div><span>Wordle Answers</span></a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/today">Today's Answer</a></li>
+            <li><a href="/archive">Archive</a></li>
+            <li><a href="/stats">Statistics</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/today">Today's Answer</a></li>
+            <li><a href="/archive">Archive</a></li>
+            <li><a href="/stats">Statistics</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+<div class="policy-card">
+
+    <div class="policy-header">
+        <h1>📖 About This Site</h1>
+        <p class="policy-meta">word-le-answers.com — Wordle Past Answers Archive</p>
+    </div>
+
+    <p>This is an independent, fan-made archive of every NYT Wordle answer. It was built to make it easy to look up past answers, check statistics, and get hints — all without digging through social media spoilers.</p>
+
+    <div class="stat-row">
+        <div class="stat-item"><div class="stat-num" id="totalAnswers">542+</div><div class="stat-lbl">Answers Archived</div></div>
+        <div class="stat-item"><div class="stat-num">2025</div><div class="stat-lbl">Coverage From</div></div>
+        <div class="stat-item"><div class="stat-num">Daily</div><div class="stat-lbl">Update Frequency</div></div>
+    </div>
+
+    <h2>How It Works</h2>
+    <p>Each day, an automated script fetches the previous day's Wordle answer directly from the New York Times API and adds it to our archive. This keeps the database current without any manual work — and without spoiling today's puzzle.</p>
+    <ul>
+        <li>Data source: <a href="https://www.nytimes.com/games/wordle/index.html" target="_blank" rel="noopener">NYT Wordle</a> (public API)</li>
+        <li>Today's answer is intentionally excluded until the following day</li>
+        <li>Archive covers Wordle #1292 (Jan 1, 2025) onwards</li>
+        <li>Updates run automatically every day at 08:00 Beijing Time</li>
+    </ul>
+
+    <h2>What You Can Do Here</h2>
+    <ul>
+        <li><strong>Search</strong> — find any past answer by word, date, or Wordle number</li>
+        <li><strong>Filter</strong> — browse by starting letter or sort order</li>
+        <li><strong>Today's hints</strong> — get progressive clues before revealing the answer</li>
+        <li><strong>Statistics</strong> — explore letter frequency, difficulty trends, and monthly breakdowns</li>
+    </ul>
+
+    <h2>About the Creator</h2>
+    <p>This site was built independently as a personal project by a Wordle fan. It is a work in progress — features are added gradually, with a focus on keeping things simple and genuinely useful.</p>
+    <div class="highlight-box">
+        <p>Have a suggestion or found a bug? <a href="/contact">Send a message</a> — all feedback is welcome and read personally.</p>
+    </div>
+
+    <h2>Disclaimer</h2>
+    <p style="font-size:.9rem;color:var(--gray-400);">This site is not affiliated with, endorsed by, or associated with the New York Times or the Wordle game. "Wordle" is a trademark of The New York Times Company. All answer data is sourced from publicly accessible NYT APIs.</p>
+
+    <div class="cta-box">
+        <p>Ready to browse the archive?</p>
+        <a href="/" class="cta-btn">📚 View All Answers →</a>
+    </div>
+
+</div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <p class="footer-text">© 2026 Wordle Past Answers. Not affiliated with NYT or Wordle.</p>
+        <ul class="footer-links">
+            <li><a href="/about">About</a></li>
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('hamburger').addEventListener('click', function(){
+        this.classList.toggle('open');
+        document.getElementById('mobileMenu').classList.toggle('open');
+    });
+    // 动态加载真实数字
+    fetch('./data/wordle-answers-database.json')
+        .then(r=>r.json())
+        .then(d=>{ document.getElementById('totalAnswers').textContent = d.metadata.total_answers + '+'; })
+        .catch(()=>{});
+</script>
+</body>
+</html>
