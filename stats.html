@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Stats – Letter Frequency & Archive Analytics | word-le-answers.com</title>
+    <meta name="description" content="Statistics and analytics for 500+ NYT Wordle answers: most common letters, difficulty distribution, monthly breakdown, and more.">
+    <link rel="canonical" href="https://word-le-answers.com/stats">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%236366f1'/><text y='.9em' font-size='80' x='10' fill='white' font-weight='bold'>W</text></svg>">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1574975766873033" crossorigin="anonymous"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QHQLHM57Y"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-8QHQLHM57Y');</script>
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        :root{
+            --primary:#6366f1;--primary-dark:#4f46e5;--primary-light:#818cf8;
+            --secondary:#8b5cf6;--success:#10b981;--warning:#f59e0b;
+            --gray-50:#f9fafb;--gray-100:#f3f4f6;--gray-200:#e5e7eb;
+            --gray-300:#d1d5db;--gray-400:#9ca3af;--gray-500:#6b7280;
+            --gray-600:#4b5563;--gray-700:#374151;--gray-800:#1f2937;
+            --bg-body:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+            --text-primary:#111827;--text-secondary:#6b7280;--border:#e5e7eb;
+            --shadow-sm:0 1px 2px rgba(0,0,0,.05);
+            --shadow:0 4px 6px -1px rgba(0,0,0,.1);
+            --shadow-lg:0 10px 25px -3px rgba(0,0,0,.15);
+            --shadow-xl:0 20px 40px -5px rgba(0,0,0,.2);
+            --transition:all 0.3s cubic-bezier(0.4,0,0.2,1);
+        }
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg-body);min-height:100vh;color:var(--text-primary);line-height:1.6;}
+        .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+
+        /* NAV */
+        nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:var(--shadow-sm);}
+        .nav-container{max-width:1280px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:64px;}
+        .nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--primary);font-weight:700;font-size:1.25rem;}
+        .nav-brand-icon{display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--primary);color:white;border-radius:8px;font-weight:700;font-size:1.2rem;}
+        .nav-links{display:flex;align-items:center;gap:24px;list-style:none;}
+        .nav-links a{color:var(--text-secondary);text-decoration:none;font-weight:500;font-size:.95rem;padding:8px 12px;border-radius:6px;transition:var(--transition);}
+        .nav-links a:hover{color:var(--primary);background:var(--gray-50);}
+        .nav-links a.active{color:var(--primary);background:var(--gray-100);}
+        .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;border:none;background:none;border-radius:6px;}
+        .hamburger span{display:block;width:24px;height:2px;background:var(--gray-700);border-radius:2px;transition:var(--transition);}
+        .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+        .hamburger.open span:nth-child(2){opacity:0;}
+        .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
+        .mobile-menu{display:none;background:white;border-top:1px solid var(--border);box-shadow:var(--shadow-lg);}
+        .mobile-menu.open{display:block;}
+        .mobile-menu ul{list-style:none;padding:12px 20px;}
+        .mobile-menu ul li{border-bottom:1px solid var(--gray-100);}
+        .mobile-menu ul li:last-child{border:none;}
+        .mobile-menu ul a{display:block;padding:14px 0;color:var(--text-primary);text-decoration:none;font-weight:500;}
+
+        /* PAGE HEADER */
+        .page-header{background:white;border-radius:16px;padding:36px 40px;margin:30px 0 24px;box-shadow:var(--shadow-xl);text-align:center;}
+        .page-header h1{color:var(--primary);font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;margin-bottom:10px;}
+        .page-header p{color:var(--text-secondary);font-size:1rem;}
+
+        /* LOADING / ERROR */
+        .state-card{background:white;border-radius:16px;padding:60px 40px;box-shadow:var(--shadow-lg);text-align:center;margin-bottom:24px;}
+        .spinner{width:48px;height:48px;border:4px solid var(--gray-200);border-top-color:var(--primary);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 20px;}
+        @keyframes spin{to{transform:rotate(360deg);}}
+        .state-card p{color:var(--text-secondary);}
+        .error-icon{font-size:3rem;margin-bottom:16px;}
+        .state-card h2{color:var(--gray-800);margin-bottom:10px;}
+
+        /* OVERVIEW CARDS */
+        .overview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px;}
+        .stat-card{background:white;border-radius:14px;padding:24px 20px;box-shadow:var(--shadow-lg);text-align:center;border-top:4px solid var(--primary);}
+        .stat-card.green{border-top-color:var(--success);}
+        .stat-card.amber{border-top-color:var(--warning);}
+        .stat-card.purple{border-top-color:var(--secondary);}
+        .stat-value{font-size:2.2rem;font-weight:800;color:var(--primary);line-height:1;}
+        .stat-card.green .stat-value{color:var(--success);}
+        .stat-card.amber .stat-value{color:var(--warning);}
+        .stat-card.purple .stat-value{color:var(--secondary);}
+        .stat-label{font-size:.8rem;color:var(--text-secondary);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-top:8px;}
+        .stat-sub{font-size:.85rem;color:var(--gray-400);margin-top:4px;}
+
+        /* SECTION CARD */
+        .section-card{background:white;border-radius:16px;padding:32px;box-shadow:var(--shadow-lg);margin-bottom:24px;}
+        .section-title{font-size:1.15rem;font-weight:700;color:var(--gray-800);margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+        .section-sub{font-size:.875rem;color:var(--text-secondary);margin-bottom:24px;}
+
+        /* BAR CHART */
+        .bar-list{display:flex;flex-direction:column;gap:8px;}
+        .bar-row{display:grid;grid-template-columns:32px 1fr 48px;align-items:center;gap:10px;}
+        .bar-letter{font-weight:700;font-size:1rem;color:var(--gray-700);text-align:center;}
+        .bar-track{height:28px;background:var(--gray-100);border-radius:6px;overflow:hidden;position:relative;}
+        .bar-fill{height:100%;border-radius:6px;transition:width 1s cubic-bezier(.4,0,.2,1);position:relative;}
+        .bar-fill::after{content:attr(data-pct);position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:.75rem;font-weight:600;color:white;white-space:nowrap;}
+        .bar-count{font-size:.875rem;font-weight:600;color:var(--gray-500);text-align:right;}
+
+        .bar-fill.c1{background:linear-gradient(90deg,#6366f1,#818cf8);}
+        .bar-fill.c2{background:linear-gradient(90deg,#8b5cf6,#a78bfa);}
+        .bar-fill.c3{background:linear-gradient(90deg,#10b981,#34d399);}
+        .bar-fill.c4{background:linear-gradient(90deg,#f59e0b,#fbbf24);}
+        .bar-fill.c5{background:linear-gradient(90deg,#ef4444,#f87171);}
+
+        /* TWO-COL */
+        .two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px;}
+
+        /* VOWEL PIE (CSS) */
+        .vowel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:4px;}
+        .vowel-item{text-align:center;background:var(--gray-50);border-radius:10px;padding:16px 8px;}
+        .vowel-count{font-size:1.6rem;font-weight:800;color:var(--primary);}
+        .vowel-label{font-size:.8rem;color:var(--text-secondary);margin-top:4px;}
+
+        /* DIFFICULTY */
+        .diff-list{display:flex;flex-direction:column;gap:10px;}
+        .diff-row{display:grid;grid-template-columns:80px 1fr 60px;align-items:center;gap:10px;}
+        .diff-label{font-size:.875rem;font-weight:600;color:var(--gray-700);}
+        .diff-bar-track{height:24px;background:var(--gray-100);border-radius:6px;overflow:hidden;}
+        .diff-bar-fill{height:100%;border-radius:6px;}
+        .diff-bar-fill.easy{background:var(--success);}
+        .diff-bar-fill.medium{background:var(--warning);}
+        .diff-bar-fill.hard{background:#ef4444;}
+        .diff-bar-fill.unknown{background:var(--gray-300);}
+        .diff-count{font-size:.875rem;font-weight:600;color:var(--gray-500);text-align:right;}
+
+        /* MONTHLY */
+        .month-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;}
+        .month-item{background:var(--gray-50);border-radius:10px;padding:14px 10px;text-align:center;}
+        .month-num{font-size:1.4rem;font-weight:800;color:var(--primary);}
+        .month-name{font-size:.8rem;color:var(--text-secondary);margin-top:4px;}
+
+        /* LATEST TABLE */
+        .latest-table{width:100%;border-collapse:collapse;}
+        .latest-table th{text-align:left;font-size:.8rem;font-weight:700;color:var(--gray-500);text-transform:uppercase;letter-spacing:.05em;padding:10px 14px;border-bottom:2px solid var(--gray-100);}
+        .latest-table td{padding:12px 14px;border-bottom:1px solid var(--gray-100);font-size:.95rem;}
+        .latest-table tr:last-child td{border-bottom:none;}
+        .latest-table tr:hover td{background:var(--gray-50);}
+        .answer-chip{display:inline-block;background:var(--primary);color:white;font-weight:700;font-size:.9rem;letter-spacing:.1em;padding:4px 12px;border-radius:6px;}
+
+        /* FOOTER */
+        footer{margin-top:40px;padding:40px 20px;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-top:1px solid var(--border);}
+        .footer-container{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;}
+        .footer-text{color:var(--text-secondary);font-size:.875rem;}
+        .footer-links{display:flex;gap:24px;list-style:none;}
+        .footer-links a{color:var(--text-secondary);text-decoration:none;font-size:.875rem;font-weight:500;transition:var(--transition);}
+        .footer-links a:hover{color:var(--primary);}
+
+        /* RESPONSIVE */
+        @media(max-width:900px){.overview-grid{grid-template-columns:repeat(2,1fr);}.two-col{grid-template-columns:1fr;}}
+        @media(max-width:600px){
+            .nav-links{display:none;}.hamburger{display:flex;}
+            .overview-grid{grid-template-columns:repeat(2,1fr);}
+            .page-header{padding:24px 16px;}
+            .section-card{padding:20px 16px;}
+            .footer-container{flex-direction:column;text-align:center;}
+            .footer-links{flex-direction:column;align-items:center;gap:12px;}
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="/" class="nav-brand">
+            <div class="nav-brand-icon">W</div>
+            <span>Wordle Answers</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/today">Today's Answer</a></li>
+            <li><a href="/archive">Archive</a></li>
+            <li><a href="/stats" class="active">Statistics</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/today">Today's Answer</a></li>
+            <li><a href="/archive">Archive</a></li>
+            <li><a href="/stats">Statistics</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="page-header">
+        <h1>📊 Wordle Stats</h1>
+        <p>Analytics derived from our archive of verified NYT Wordle answers</p>
+    </div>
+
+    <!-- Loading -->
+    <div class="state-card" id="loadingCard">
+        <div class="spinner"></div>
+        <p>Crunching the numbers…</p>
+    </div>
+
+    <!-- Error -->
+    <div class="state-card" id="errorCard" style="display:none">
+        <div class="error-icon">⚠️</div>
+        <h2>Couldn't load stats</h2>
+        <p>Failed to fetch answer data. Please try refreshing the page.</p>
+    </div>
+
+    <!-- Main content -->
+    <div id="mainContent" style="display:none">
+
+        <!-- Overview cards -->
+        <div class="overview-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="totalAnswers">—</div>
+                <div class="stat-label">Total Answers</div>
+                <div class="stat-sub" id="dateRange">—</div>
+            </div>
+            <div class="stat-card green">
+                <div class="stat-value" id="latestNum">—</div>
+                <div class="stat-label">Latest Wordle #</div>
+                <div class="stat-sub" id="latestAnswer">—</div>
+            </div>
+            <div class="stat-card amber">
+                <div class="stat-value" id="lastUpdated">—</div>
+                <div class="stat-label">Last Updated</div>
+                <div class="stat-sub">auto-updates daily</div>
+            </div>
+            <div class="stat-card purple">
+                <div class="stat-value" id="uniqueLetters">—</div>
+                <div class="stat-label">Unique Letters Used</div>
+                <div class="stat-sub">out of 26</div>
+            </div>
+        </div>
+
+        <!-- Letter frequency (first + last) -->
+        <div class="two-col">
+            <div class="section-card">
+                <div class="section-title">🔤 Most Common First Letters</div>
+                <div class="section-sub">Which letters start Wordle answers most often</div>
+                <div class="bar-list" id="firstLetterBars"></div>
+            </div>
+            <div class="section-card">
+                <div class="section-title">🔚 Most Common Last Letters</div>
+                <div class="section-sub">Which letters end Wordle answers most often</div>
+                <div class="bar-list" id="lastLetterBars"></div>
+            </div>
+        </div>
+
+        <!-- Overall letter freq -->
+        <div class="section-card">
+            <div class="section-title">📈 Overall Letter Frequency</div>
+            <div class="section-sub">Top 15 most-used letters across all answer positions</div>
+            <div class="bar-list" id="overallLetterBars"></div>
+        </div>
+
+        <!-- Vowels + Difficulty -->
+        <div class="two-col">
+            <div class="section-card">
+                <div class="section-title">🔵 Vowels Per Answer</div>
+                <div class="section-sub">How many vowels (A E I O U) each answer contains</div>
+                <div class="vowel-grid" id="vowelGrid"></div>
+            </div>
+            <div class="section-card">
+                <div class="section-title">⚡ Difficulty Distribution</div>
+                <div class="section-sub">Self-assessed difficulty of archived answers</div>
+                <div class="diff-list" id="diffList"></div>
+            </div>
+        </div>
+
+        <!-- Monthly breakdown -->
+        <div class="section-card">
+            <div class="section-title">📅 Answers Per Month</div>
+            <div class="section-sub">How many Wordle answers are archived for each month</div>
+            <div class="month-grid" id="monthGrid"></div>
+        </div>
+
+        <!-- Latest 10 entries -->
+        <div class="section-card">
+            <div class="section-title">🕐 Latest 10 Archived Answers</div>
+            <div class="section-sub">Most recently added to the archive</div>
+            <div style="overflow-x:auto">
+                <table class="latest-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Date</th>
+                            <th>Answer</th>
+                            <th>First Letter</th>
+                            <th>Vowels</th>
+                        </tr>
+                    </thead>
+                    <tbody id="latestTbody"></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div><!-- /mainContent -->
+</div>
+
+<footer>
+    <div class="footer-container">
+        <p class="footer-text">© 2026 Wordle Past Answers. Not affiliated with NYT or Wordle.</p>
+        <ul class="footer-links">
+            <li><a href="/about">About</a></li>
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+/* =====================================================
+   HELPERS
+===================================================== */
+function freq(arr) {
+    const m = {};
+    arr.forEach(x => { m[x] = (m[x] || 0) + 1; });
+    return m;
+}
+function topN(map, n) {
+    return Object.entries(map).sort((a,b) => b[1]-a[1]).slice(0, n);
+}
+function fmtDate(str) {
+    const d = new Date(str + 'T12:00:00');
+    return d.toLocaleDateString('en-US', { year:'numeric', month:'short', day:'numeric' });
+}
+function vowelCount(word) {
+    return [...word].filter(c => 'AEIOU'.includes(c)).length;
+}
+
+/* =====================================================
+   RENDER BARS
+===================================================== */
+const COLORS = ['c1','c2','c3','c4','c5'];
+function renderBars(containerId, entries, maxVal) {
+    const el = document.getElementById(containerId);
+    el.innerHTML = entries.map(([letter, count], i) => {
+        const pct = Math.round(count / maxVal * 100);
+        return `<div class="bar-row">
+            <div class="bar-letter">${letter}</div>
+            <div class="bar-track">
+                <div class="bar-fill ${COLORS[i % COLORS.length]}" style="width:0%" data-pct="${pct}%" data-target="${pct}%"></div>
+            </div>
+            <div class="bar-count">${count}</div>
+        </div>`;
+    }).join('');
+    // animate after paint
+    requestAnimationFrame(() => {
+        el.querySelectorAll('.bar-fill').forEach(b => {
+            b.style.width = b.dataset.target;
+        });
+    });
+}
+
+/* =====================================================
+   MAIN
+===================================================== */
+async function loadStats() {
+    let data;
+    try {
+        const res = await fetch('./data/wordle-answers-database.json');
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        data = await res.json();
+    } catch(e) {
+        document.getElementById('loadingCard').style.display = 'none';
+        document.getElementById('errorCard').style.display  = 'block';
+        return;
+    }
+
+    const meta    = data.metadata;
+    const answers = Object.values(data.answers).sort((a,b) => b.wordleNumber - a.wordleNumber);
+    const total   = answers.length;
+    const latest  = answers[0];
+    const oldest  = answers[answers.length - 1];
+
+    /* ---- OVERVIEW ---- */
+    document.getElementById('totalAnswers').textContent = total.toLocaleString();
+    document.getElementById('dateRange').textContent    = `${fmtDate(oldest.date)} – ${fmtDate(latest.date)}`;
+    document.getElementById('latestNum').textContent    = '#' + latest.wordleNumber;
+    document.getElementById('latestAnswer').textContent = latest.answer + ' · ' + fmtDate(latest.date);
+    document.getElementById('lastUpdated').textContent  = fmtDate(meta.last_updated);
+
+    const allLetters = new Set(answers.flatMap(a => [...a.answer]));
+    document.getElementById('uniqueLetters').textContent = allLetters.size;
+
+    /* ---- FIRST / LAST LETTER ---- */
+    const firstFreq = freq(answers.map(a => a.answer[0]));
+    const lastFreq  = freq(answers.map(a => a.answer[a.answer.length - 1]));
+    const topFirst  = topN(firstFreq, 10);
+    const topLast   = topN(lastFreq,  10);
+    renderBars('firstLetterBars', topFirst, topFirst[0][1]);
+    renderBars('lastLetterBars',  topLast,  topLast[0][1]);
+
+    /* ---- OVERALL LETTER FREQ ---- */
+    const allChars  = answers.flatMap(a => [...a.answer]);
+    const charFreq  = freq(allChars);
+    const topChars  = topN(charFreq, 15);
+    renderBars('overallLetterBars', topChars, topChars[0][1]);
+
+    /* ---- VOWELS ---- */
+    const vowelDist = {1:0,2:0,3:0,4:0};
+    answers.forEach(a => {
+        const v = vowelCount(a.answer);
+        if (v >= 1 && v <= 4) vowelDist[v]++;
+    });
+    document.getElementById('vowelGrid').innerHTML = Object.entries(vowelDist).map(([v, c]) => `
+        <div class="vowel-item">
+            <div class="vowel-count">${c}</div>
+            <div class="vowel-label">${v} vowel${v>1?'s':''}</div>
+        </div>`).join('');
+
+    /* ---- DIFFICULTY ---- */
+    const diffDist  = freq(answers.map(a => a.difficulty || 'unknown'));
+    const diffOrder = ['easy','medium','hard','unknown'];
+    const diffMax   = Math.max(...Object.values(diffDist));
+    document.getElementById('diffList').innerHTML = diffOrder
+        .filter(d => diffDist[d])
+        .map(d => {
+            const pct = Math.round(diffDist[d] / total * 100);
+            return `<div class="diff-row">
+                <div class="diff-label">${d.charAt(0).toUpperCase()+d.slice(1)}</div>
+                <div class="diff-bar-track">
+                    <div class="diff-bar-fill ${d}" style="width:${Math.round(diffDist[d]/diffMax*100)}%"></div>
+                </div>
+                <div class="diff-count">${diffDist[d]} <span style="color:var(--gray-400);font-size:.8rem">(${pct}%)</span></div>
+            </div>`;
+        }).join('');
+
+    /* ---- MONTHLY ---- */
+    const monthFreq = {};
+    answers.forEach(a => {
+        const key = a.date.slice(0, 7); // YYYY-MM
+        monthFreq[key] = (monthFreq[key] || 0) + 1;
+    });
+    const months = Object.entries(monthFreq).sort((a,b) => a[0].localeCompare(b[0]));
+    document.getElementById('monthGrid').innerHTML = months.map(([ym, c]) => {
+        const d = new Date(ym + '-15');
+        const label = d.toLocaleDateString('en-US', { year:'2-digit', month:'short' });
+        return `<div class="month-item"><div class="month-num">${c}</div><div class="month-name">${label}</div></div>`;
+    }).join('');
+
+    /* ---- LATEST 10 ---- */
+    document.getElementById('latestTbody').innerHTML = answers.slice(0, 10).map(a => `
+        <tr>
+            <td><strong>#${a.wordleNumber}</strong></td>
+            <td>${fmtDate(a.date)}</td>
+            <td><span class="answer-chip">${a.answer}</span></td>
+            <td>${a.answer[0]}</td>
+            <td>${vowelCount(a.answer)}</td>
+        </tr>`).join('');
+
+    /* ---- SHOW ---- */
+    document.getElementById('loadingCard').style.display = 'none';
+    document.getElementById('mainContent').style.display = 'block';
+}
+
+/* ---- NAV ---- */
+document.getElementById('hamburger').addEventListener('click', function(){
+    this.classList.toggle('open');
+    document.getElementById('mobileMenu').classList.toggle('open');
+});
+
+document.addEventListener('DOMContentLoaded', loadStats);
+</script>
+</body>
+</html>
