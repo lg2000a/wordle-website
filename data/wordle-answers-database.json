@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-06-28",
-    "total_answers": 544,
+    "last_updated": "2026-06-29",
+    "total_answers": 545,
     "data_format_version": "1.0",
     "note": "Contains 2025-01-01 to 2026-06-26 answers (real data from NYT). All answers verified."
   },
@@ -3268,6 +3268,12 @@
       "wordleNumber": 1835,
       "date": "2026-06-28",
       "answer": "EMCEE",
+      "difficulty": "medium"
+    },
+    "1836": {
+      "wordleNumber": 1836,
+      "date": "2026-06-29",
+      "answer": "CRUDE",
       "difficulty": "medium"
     }
   }
