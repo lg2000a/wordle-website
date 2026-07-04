@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-01",
-    "total_answers": 547,
+    "last_updated": "2026-07-02",
+    "total_answers": 548,
     "data_format_version": "1.0",
     "note": "Contains 2025-01-01 to 2026-06-26 answers (real data from NYT). All answers verified."
   },
@@ -3286,6 +3286,12 @@
       "wordleNumber": 1838,
       "date": "2026-07-01",
       "answer": "DEMUR",
+      "difficulty": "medium"
+    },
+    "1839": {
+      "wordleNumber": 1839,
+      "date": "2026-07-02",
+      "answer": "MAVEN",
       "difficulty": "medium"
     }
   }
