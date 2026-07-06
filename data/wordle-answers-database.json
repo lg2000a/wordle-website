@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-03",
-    "total_answers": 549,
+    "last_updated": "2026-07-04",
+    "total_answers": 550,
     "data_format_version": "1.0",
     "note": "Contains 2025-01-01 to 2026-06-26 answers (real data from NYT). All answers verified."
   },
@@ -3298,6 +3298,12 @@
       "wordleNumber": 1840,
       "date": "2026-07-03",
       "answer": "BATON",
+      "difficulty": "medium"
+    },
+    "1841": {
+      "wordleNumber": 1841,
+      "date": "2026-07-04",
+      "answer": "PIZZA",
       "difficulty": "medium"
     }
   }
