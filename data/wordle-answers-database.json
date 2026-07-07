@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-04",
-    "total_answers": 550,
+    "last_updated": "2026-07-05",
+    "total_answers": 551,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3303,6 +3303,12 @@
       "wordleNumber": 1841,
       "date": "2026-07-04",
       "answer": "PIZZA",
+      "difficulty": "medium"
+    },
+    "1842": {
+      "wordleNumber": 1842,
+      "date": "2026-07-05",
+      "answer": "SWAMI",
       "difficulty": "medium"
     }
   }
