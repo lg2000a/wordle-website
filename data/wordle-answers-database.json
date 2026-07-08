@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-05",
-    "total_answers": 551,
+    "last_updated": "2026-07-06",
+    "total_answers": 552,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3309,6 +3309,12 @@
       "wordleNumber": 1842,
       "date": "2026-07-05",
       "answer": "SWAMI",
+      "difficulty": "medium"
+    },
+    "1843": {
+      "wordleNumber": 1843,
+      "date": "2026-07-06",
+      "answer": "TODDY",
       "difficulty": "medium"
     }
   }
