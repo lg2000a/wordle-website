@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07",
-    "total_answers": 553,
+    "last_updated": "2026-07-08",
+    "total_answers": 554,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3321,6 +3321,12 @@
       "wordleNumber": 1844,
       "date": "2026-07-07",
       "answer": "SLING",
+      "difficulty": "medium"
+    },
+    "1845": {
+      "wordleNumber": 1845,
+      "date": "2026-07-08",
+      "answer": "DEMON",
       "difficulty": "medium"
     }
   }
