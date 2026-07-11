@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-08",
-    "total_answers": 554,
+    "last_updated": "2026-07-09",
+    "total_answers": 555,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3327,6 +3327,12 @@
       "wordleNumber": 1845,
       "date": "2026-07-08",
       "answer": "DEMON",
+      "difficulty": "medium"
+    },
+    "1846": {
+      "wordleNumber": 1846,
+      "date": "2026-07-09",
+      "answer": "AMEND",
       "difficulty": "medium"
     }
   }
