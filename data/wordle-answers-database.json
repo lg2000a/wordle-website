@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-09",
-    "total_answers": 555,
+    "last_updated": "2026-07-10",
+    "total_answers": 556,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3333,6 +3333,12 @@
       "wordleNumber": 1846,
       "date": "2026-07-09",
       "answer": "AMEND",
+      "difficulty": "medium"
+    },
+    "1847": {
+      "wordleNumber": 1847,
+      "date": "2026-07-10",
+      "answer": "CANAL",
       "difficulty": "medium"
     }
   }
