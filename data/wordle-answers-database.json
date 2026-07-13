@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-10",
-    "total_answers": 556,
+    "last_updated": "2026-07-11",
+    "total_answers": 557,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3339,6 +3339,12 @@
       "wordleNumber": 1847,
       "date": "2026-07-10",
       "answer": "CANAL",
+      "difficulty": "medium"
+    },
+    "1848": {
+      "wordleNumber": 1848,
+      "date": "2026-07-11",
+      "answer": "AVIAN",
       "difficulty": "medium"
     }
   }
