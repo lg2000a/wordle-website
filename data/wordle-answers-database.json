@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-11",
-    "total_answers": 557,
+    "last_updated": "2026-07-12",
+    "total_answers": 558,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3345,6 +3345,12 @@
       "wordleNumber": 1848,
       "date": "2026-07-11",
       "answer": "AVIAN",
+      "difficulty": "medium"
+    },
+    "1849": {
+      "wordleNumber": 1849,
+      "date": "2026-07-12",
+      "answer": "CLACK",
       "difficulty": "medium"
     }
   }
