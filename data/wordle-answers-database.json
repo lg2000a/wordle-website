@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-12",
-    "total_answers": 558,
+    "last_updated": "2026-07-13",
+    "total_answers": 559,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3351,6 +3351,12 @@
       "wordleNumber": 1849,
       "date": "2026-07-12",
       "answer": "CLACK",
+      "difficulty": "medium"
+    },
+    "1850": {
+      "wordleNumber": 1850,
+      "date": "2026-07-13",
+      "answer": "STOUT",
       "difficulty": "medium"
     }
   }
