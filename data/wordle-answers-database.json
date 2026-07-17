@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-14",
-    "total_answers": 560,
+    "last_updated": "2026-07-15",
+    "total_answers": 561,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3363,6 +3363,12 @@
       "wordleNumber": 1851,
       "date": "2026-07-14",
       "answer": "STEAK",
+      "difficulty": "medium"
+    },
+    "1852": {
+      "wordleNumber": 1852,
+      "date": "2026-07-15",
+      "answer": "PSHAW",
       "difficulty": "medium"
     }
   }
