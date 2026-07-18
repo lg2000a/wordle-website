@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-15",
-    "total_answers": 561,
+    "last_updated": "2026-07-16",
+    "total_answers": 562,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3369,6 +3369,12 @@
       "wordleNumber": 1852,
       "date": "2026-07-15",
       "answer": "PSHAW",
+      "difficulty": "medium"
+    },
+    "1853": {
+      "wordleNumber": 1853,
+      "date": "2026-07-16",
+      "answer": "BUTTE",
       "difficulty": "medium"
     }
   }
