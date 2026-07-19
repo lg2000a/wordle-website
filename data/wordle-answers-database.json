@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-16",
-    "total_answers": 562,
+    "last_updated": "2026-07-17",
+    "total_answers": 563,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3375,6 +3375,12 @@
       "wordleNumber": 1853,
       "date": "2026-07-16",
       "answer": "BUTTE",
+      "difficulty": "medium"
+    },
+    "1854": {
+      "wordleNumber": 1854,
+      "date": "2026-07-17",
+      "answer": "LEGAL",
       "difficulty": "medium"
     }
   }
