@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-17",
-    "total_answers": 563,
+    "last_updated": "2026-07-18",
+    "total_answers": 564,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3381,6 +3381,12 @@
       "wordleNumber": 1854,
       "date": "2026-07-17",
       "answer": "LEGAL",
+      "difficulty": "medium"
+    },
+    "1855": {
+      "wordleNumber": 1855,
+      "date": "2026-07-18",
+      "answer": "BOOTH",
       "difficulty": "medium"
     }
   }
