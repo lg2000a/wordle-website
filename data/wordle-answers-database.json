@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-18",
-    "total_answers": 564,
+    "last_updated": "2026-07-19",
+    "total_answers": 565,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3387,6 +3387,12 @@
       "wordleNumber": 1855,
       "date": "2026-07-18",
       "answer": "BOOTH",
+      "difficulty": "medium"
+    },
+    "1856": {
+      "wordleNumber": 1856,
+      "date": "2026-07-19",
+      "answer": "CHURN",
       "difficulty": "medium"
     }
   }
