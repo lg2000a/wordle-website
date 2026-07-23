@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-20",
-    "total_answers": 566,
+    "last_updated": "2026-07-21",
+    "total_answers": 567,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3399,6 +3399,12 @@
       "wordleNumber": 1857,
       "date": "2026-07-20",
       "answer": "DIVER",
+      "difficulty": "medium"
+    },
+    "1858": {
+      "wordleNumber": 1858,
+      "date": "2026-07-21",
+      "answer": "SHILL",
       "difficulty": "medium"
     }
   }
