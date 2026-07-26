@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-23",
-    "total_answers": 569,
+    "last_updated": "2026-07-24",
+    "total_answers": 570,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3417,6 +3417,12 @@
       "wordleNumber": 1860,
       "date": "2026-07-23",
       "answer": "ORBIT",
+      "difficulty": "medium"
+    },
+    "1861": {
+      "wordleNumber": 1861,
+      "date": "2026-07-24",
+      "answer": "PUTTY",
       "difficulty": "medium"
     }
   }
