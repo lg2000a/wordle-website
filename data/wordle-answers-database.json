@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-25",
-    "total_answers": 571,
+    "last_updated": "2026-07-26",
+    "total_answers": 572,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3429,6 +3429,12 @@
       "wordleNumber": 1862,
       "date": "2026-07-25",
       "answer": "ALOHA",
+      "difficulty": "medium"
+    },
+    "1863": {
+      "wordleNumber": 1863,
+      "date": "2026-07-26",
+      "answer": "GRAPE",
       "difficulty": "medium"
     }
   }
