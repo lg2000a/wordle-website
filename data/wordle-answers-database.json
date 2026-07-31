@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-28",
-    "total_answers": 574,
+    "last_updated": "2026-07-29",
+    "total_answers": 575,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3447,6 +3447,12 @@
       "wordleNumber": 1865,
       "date": "2026-07-28",
       "answer": "SONAR",
+      "difficulty": "medium"
+    },
+    "1866": {
+      "wordleNumber": 1866,
+      "date": "2026-07-29",
+      "answer": "VALVE",
       "difficulty": "medium"
     }
   }
