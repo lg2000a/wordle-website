@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-29",
-    "total_answers": 575,
+    "last_updated": "2026-07-30",
+    "total_answers": 576,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3453,6 +3453,12 @@
       "wordleNumber": 1866,
       "date": "2026-07-29",
       "answer": "VALVE",
+      "difficulty": "medium"
+    },
+    "1867": {
+      "wordleNumber": 1867,
+      "date": "2026-07-30",
+      "answer": "FLUME",
       "difficulty": "medium"
     }
   }
