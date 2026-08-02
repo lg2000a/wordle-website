@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-30",
-    "total_answers": 576,
+    "last_updated": "2026-07-31",
+    "total_answers": 577,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3459,6 +3459,12 @@
       "wordleNumber": 1867,
       "date": "2026-07-30",
       "answer": "FLUME",
+      "difficulty": "medium"
+    },
+    "1868": {
+      "wordleNumber": 1868,
+      "date": "2026-07-31",
+      "answer": "PURSE",
       "difficulty": "medium"
     }
   }
