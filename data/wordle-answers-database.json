@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-01",
-    "total_answers": 578,
+    "last_updated": "2026-08-02",
+    "total_answers": 579,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3471,6 +3471,12 @@
       "wordleNumber": 1869,
       "date": "2026-08-01",
       "answer": "SLUSH",
+      "difficulty": "medium"
+    },
+    "1870": {
+      "wordleNumber": 1870,
+      "date": "2026-08-02",
+      "answer": "PENAL",
       "difficulty": "medium"
     }
   }
