@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-02",
-    "total_answers": 579,
+    "last_updated": "2026-08-03",
+    "total_answers": 580,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3477,6 +3477,12 @@
       "wordleNumber": 1870,
       "date": "2026-08-02",
       "answer": "PENAL",
+      "difficulty": "medium"
+    },
+    "1871": {
+      "wordleNumber": 1871,
+      "date": "2026-08-03",
+      "answer": "REPLY",
       "difficulty": "medium"
     }
   }
