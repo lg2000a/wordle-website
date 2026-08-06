@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-03",
-    "total_answers": 580,
+    "last_updated": "2026-08-04",
+    "total_answers": 581,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3483,6 +3483,12 @@
       "wordleNumber": 1871,
       "date": "2026-08-03",
       "answer": "REPLY",
+      "difficulty": "medium"
+    },
+    "1872": {
+      "wordleNumber": 1872,
+      "date": "2026-08-04",
+      "answer": "MOTIF",
       "difficulty": "medium"
     }
   }
