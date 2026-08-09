@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-06",
-    "total_answers": 583,
+    "last_updated": "2026-08-07",
+    "total_answers": 584,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3501,6 +3501,12 @@
       "wordleNumber": 1874,
       "date": "2026-08-06",
       "answer": "GRIPE",
+      "difficulty": "medium"
+    },
+    "1875": {
+      "wordleNumber": 1875,
+      "date": "2026-08-07",
+      "answer": "FEIGN",
       "difficulty": "medium"
     }
   }
