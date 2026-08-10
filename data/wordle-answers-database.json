@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-07",
-    "total_answers": 584,
+    "last_updated": "2026-08-08",
+    "total_answers": 585,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3507,6 +3507,12 @@
       "wordleNumber": 1875,
       "date": "2026-08-07",
       "answer": "FEIGN",
+      "difficulty": "medium"
+    },
+    "1876": {
+      "wordleNumber": 1876,
+      "date": "2026-08-08",
+      "answer": "PRIVY",
       "difficulty": "medium"
     }
   }
