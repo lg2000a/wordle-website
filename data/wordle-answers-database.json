@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-10",
-    "total_answers": 587,
+    "last_updated": "2026-08-11",
+    "total_answers": 588,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3525,6 +3525,12 @@
       "wordleNumber": 1878,
       "date": "2026-08-10",
       "answer": "SNIPE",
+      "difficulty": "medium"
+    },
+    "1879": {
+      "wordleNumber": 1879,
+      "date": "2026-08-11",
+      "answer": "FENCE",
       "difficulty": "medium"
     }
   }
