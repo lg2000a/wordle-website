@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-12",
-    "total_answers": 589,
+    "last_updated": "2026-08-13",
+    "total_answers": 590,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3537,6 +3537,12 @@
       "wordleNumber": 1880,
       "date": "2026-08-12",
       "answer": "WIMPY",
+      "difficulty": "medium"
+    },
+    "1881": {
+      "wordleNumber": 1881,
+      "date": "2026-08-13",
+      "answer": "CRASH",
       "difficulty": "medium"
     }
   }
