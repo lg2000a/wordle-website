@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-14",
-    "total_answers": 591,
+    "last_updated": "2026-08-15",
+    "total_answers": 592,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3549,6 +3549,12 @@
       "wordleNumber": 1882,
       "date": "2026-08-14",
       "answer": "GEODE",
+      "difficulty": "medium"
+    },
+    "1883": {
+      "wordleNumber": 1883,
+      "date": "2026-08-15",
+      "answer": "LOOSE",
       "difficulty": "medium"
     }
   }
