@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-15",
-    "total_answers": 592,
+    "last_updated": "2026-08-16",
+    "total_answers": 593,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3555,6 +3555,12 @@
       "wordleNumber": 1883,
       "date": "2026-08-15",
       "answer": "LOOSE",
+      "difficulty": "medium"
+    },
+    "1884": {
+      "wordleNumber": 1884,
+      "date": "2026-08-16",
+      "answer": "ASPIC",
       "difficulty": "medium"
     }
   }
