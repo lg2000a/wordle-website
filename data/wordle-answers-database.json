@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-17",
-    "total_answers": 594,
+    "last_updated": "2026-08-18",
+    "total_answers": 595,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3567,6 +3567,12 @@
       "wordleNumber": 1885,
       "date": "2026-08-17",
       "answer": "TRIBE",
+      "difficulty": "medium"
+    },
+    "1886": {
+      "wordleNumber": 1886,
+      "date": "2026-08-18",
+      "answer": "STRIP",
       "difficulty": "medium"
     }
   }
