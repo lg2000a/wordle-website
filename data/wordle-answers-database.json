@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-18",
-    "total_answers": 595,
+    "last_updated": "2026-08-19",
+    "total_answers": 596,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3573,6 +3573,12 @@
       "wordleNumber": 1886,
       "date": "2026-08-18",
       "answer": "STRIP",
+      "difficulty": "medium"
+    },
+    "1887": {
+      "wordleNumber": 1887,
+      "date": "2026-08-19",
+      "answer": "GRILL",
       "difficulty": "medium"
     }
   }
