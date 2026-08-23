@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-20",
-    "total_answers": 597,
+    "last_updated": "2026-08-21",
+    "total_answers": 598,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3585,6 +3585,12 @@
       "wordleNumber": 1888,
       "date": "2026-08-20",
       "answer": "MURKY",
+      "difficulty": "medium"
+    },
+    "1889": {
+      "wordleNumber": 1889,
+      "date": "2026-08-21",
+      "answer": "TRACE",
       "difficulty": "medium"
     }
   }
