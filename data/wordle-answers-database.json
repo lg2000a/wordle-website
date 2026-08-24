@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-21",
-    "total_answers": 598,
+    "last_updated": "2026-08-22",
+    "total_answers": 599,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3591,6 +3591,12 @@
       "wordleNumber": 1889,
       "date": "2026-08-21",
       "answer": "TRACE",
+      "difficulty": "medium"
+    },
+    "1890": {
+      "wordleNumber": 1890,
+      "date": "2026-08-22",
+      "answer": "PRAWN",
       "difficulty": "medium"
     }
   }
