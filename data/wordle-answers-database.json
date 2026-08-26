@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-23",
-    "total_answers": 600,
+    "last_updated": "2026-08-24",
+    "total_answers": 601,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3603,6 +3603,12 @@
       "wordleNumber": 1891,
       "date": "2026-08-23",
       "answer": "OLDEN",
+      "difficulty": "medium"
+    },
+    "1892": {
+      "wordleNumber": 1892,
+      "date": "2026-08-24",
+      "answer": "RUNNY",
       "difficulty": "medium"
     }
   }
