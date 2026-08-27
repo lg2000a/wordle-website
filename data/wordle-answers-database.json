@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-24",
-    "total_answers": 601,
+    "last_updated": "2026-08-26",
+    "total_answers": 602,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3609,6 +3609,12 @@
       "wordleNumber": 1892,
       "date": "2026-08-24",
       "answer": "RUNNY",
+      "difficulty": "medium"
+    },
+    "1894": {
+      "wordleNumber": 1894,
+      "date": "2026-08-26",
+      "answer": "CAPON",
       "difficulty": "medium"
     }
   }
