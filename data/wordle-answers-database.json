@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-27",
-    "total_answers": 603,
+    "last_updated": "2026-08-28",
+    "total_answers": 604,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3621,6 +3621,12 @@
       "wordleNumber": 1895,
       "date": "2026-08-27",
       "answer": "UNCUT",
+      "difficulty": "medium"
+    },
+    "1896": {
+      "wordleNumber": 1896,
+      "date": "2026-08-28",
+      "answer": "TWEEN",
       "difficulty": "medium"
     }
   }
