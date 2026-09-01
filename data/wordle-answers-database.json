@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-29",
-    "total_answers": 605,
+    "last_updated": "2026-08-30",
+    "total_answers": 606,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3633,6 +3633,12 @@
       "wordleNumber": 1897,
       "date": "2026-08-29",
       "answer": "BLOOD",
+      "difficulty": "medium"
+    },
+    "1898": {
+      "wordleNumber": 1898,
+      "date": "2026-08-30",
+      "answer": "INTEL",
       "difficulty": "medium"
     }
   }
