@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-08-30",
-    "total_answers": 606,
+    "last_updated": "2026-08-31",
+    "total_answers": 607,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3639,6 +3639,12 @@
       "wordleNumber": 1898,
       "date": "2026-08-30",
       "answer": "INTEL",
+      "difficulty": "medium"
+    },
+    "1899": {
+      "wordleNumber": 1899,
+      "date": "2026-08-31",
+      "answer": "MOUND",
       "difficulty": "medium"
     }
   }
