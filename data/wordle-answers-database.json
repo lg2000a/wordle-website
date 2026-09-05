@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-02",
-    "total_answers": 609,
+    "last_updated": "2026-09-03",
+    "total_answers": 610,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3657,6 +3657,12 @@
       "wordleNumber": 1901,
       "date": "2026-09-02",
       "answer": "RULER",
+      "difficulty": "medium"
+    },
+    "1902": {
+      "wordleNumber": 1902,
+      "date": "2026-09-03",
+      "answer": "JOIST",
       "difficulty": "medium"
     }
   }
