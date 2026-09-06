@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-03",
-    "total_answers": 610,
+    "last_updated": "2026-09-04",
+    "total_answers": 611,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3663,6 +3663,12 @@
       "wordleNumber": 1902,
       "date": "2026-09-03",
       "answer": "JOIST",
+      "difficulty": "medium"
+    },
+    "1903": {
+      "wordleNumber": 1903,
+      "date": "2026-09-04",
+      "answer": "WAGER",
       "difficulty": "medium"
     }
   }
