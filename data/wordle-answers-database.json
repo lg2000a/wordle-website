@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-05",
-    "total_answers": 612,
+    "last_updated": "2026-09-06",
+    "total_answers": 613,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3675,6 +3675,12 @@
       "wordleNumber": 1904,
       "date": "2026-09-05",
       "answer": "SOUPY",
+      "difficulty": "medium"
+    },
+    "1905": {
+      "wordleNumber": 1905,
+      "date": "2026-09-06",
+      "answer": "BEIGE",
       "difficulty": "medium"
     }
   }
