@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-06",
-    "total_answers": 613,
+    "last_updated": "2026-09-07",
+    "total_answers": 614,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3681,6 +3681,12 @@
       "wordleNumber": 1905,
       "date": "2026-09-06",
       "answer": "BEIGE",
+      "difficulty": "medium"
+    },
+    "1906": {
+      "wordleNumber": 1906,
+      "date": "2026-09-07",
+      "answer": "BLIND",
       "difficulty": "medium"
     }
   }
