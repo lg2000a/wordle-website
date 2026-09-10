@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-07",
-    "total_answers": 614,
+    "last_updated": "2026-09-08",
+    "total_answers": 615,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3687,6 +3687,12 @@
       "wordleNumber": 1906,
       "date": "2026-09-07",
       "answer": "BLIND",
+      "difficulty": "medium"
+    },
+    "1907": {
+      "wordleNumber": 1907,
+      "date": "2026-09-08",
+      "answer": "LIVEN",
       "difficulty": "medium"
     }
   }
