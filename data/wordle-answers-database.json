@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-08",
-    "total_answers": 615,
+    "last_updated": "2026-09-09",
+    "total_answers": 616,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3693,6 +3693,12 @@
       "wordleNumber": 1907,
       "date": "2026-09-08",
       "answer": "LIVEN",
+      "difficulty": "medium"
+    },
+    "1908": {
+      "wordleNumber": 1908,
+      "date": "2026-09-09",
+      "answer": "BURST",
       "difficulty": "medium"
     }
   }
