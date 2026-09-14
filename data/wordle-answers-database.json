@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-11",
-    "total_answers": 618,
+    "last_updated": "2026-09-12",
+    "total_answers": 619,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3711,6 +3711,12 @@
       "wordleNumber": 1910,
       "date": "2026-09-11",
       "answer": "ASTER",
+      "difficulty": "medium"
+    },
+    "1911": {
+      "wordleNumber": 1911,
+      "date": "2026-09-12",
+      "answer": "NIFTY",
       "difficulty": "medium"
     }
   }
