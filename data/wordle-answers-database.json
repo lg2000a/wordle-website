@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-12",
-    "total_answers": 619,
+    "last_updated": "2026-09-13",
+    "total_answers": 620,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3717,6 +3717,12 @@
       "wordleNumber": 1911,
       "date": "2026-09-12",
       "answer": "NIFTY",
+      "difficulty": "medium"
+    },
+    "1912": {
+      "wordleNumber": 1912,
+      "date": "2026-09-13",
+      "answer": "FOCUS",
       "difficulty": "medium"
     }
   }
