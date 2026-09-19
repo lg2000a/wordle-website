@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-16",
-    "total_answers": 623,
+    "last_updated": "2026-09-17",
+    "total_answers": 624,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3741,6 +3741,12 @@
       "wordleNumber": 1915,
       "date": "2026-09-16",
       "answer": "WISPY",
+      "difficulty": "medium"
+    },
+    "1916": {
+      "wordleNumber": 1916,
+      "date": "2026-09-17",
+      "answer": "THETA",
       "difficulty": "medium"
     }
   }
