@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-19",
-    "total_answers": 626,
+    "last_updated": "2026-09-20",
+    "total_answers": 627,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3759,6 +3759,12 @@
       "wordleNumber": 1918,
       "date": "2026-09-19",
       "answer": "WAKEN",
+      "difficulty": "medium"
+    },
+    "1919": {
+      "wordleNumber": 1919,
+      "date": "2026-09-20",
+      "answer": "SHONE",
       "difficulty": "medium"
     }
   }
