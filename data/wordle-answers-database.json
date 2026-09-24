@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-21",
-    "total_answers": 628,
+    "last_updated": "2026-09-22",
+    "total_answers": 629,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3771,6 +3771,12 @@
       "wordleNumber": 1920,
       "date": "2026-09-21",
       "answer": "PAGER",
+      "difficulty": "medium"
+    },
+    "1921": {
+      "wordleNumber": 1921,
+      "date": "2026-09-22",
+      "answer": "STOKE",
       "difficulty": "medium"
     }
   }
