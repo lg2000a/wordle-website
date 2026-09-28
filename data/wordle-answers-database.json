@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-25",
-    "total_answers": 632,
+    "last_updated": "2026-09-26",
+    "total_answers": 633,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3795,6 +3795,12 @@
       "wordleNumber": 1924,
       "date": "2026-09-25",
       "answer": "COPSE",
+      "difficulty": "medium"
+    },
+    "1925": {
+      "wordleNumber": 1925,
+      "date": "2026-09-26",
+      "answer": "ELEGY",
       "difficulty": "medium"
     }
   }
