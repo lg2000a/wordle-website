@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-26",
-    "total_answers": 633,
+    "last_updated": "2026-09-27",
+    "total_answers": 634,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3801,6 +3801,12 @@
       "wordleNumber": 1925,
       "date": "2026-09-26",
       "answer": "ELEGY",
+      "difficulty": "medium"
+    },
+    "1926": {
+      "wordleNumber": 1926,
+      "date": "2026-09-27",
+      "answer": "SLOOP",
       "difficulty": "medium"
     }
   }
