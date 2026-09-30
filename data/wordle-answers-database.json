@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-27",
-    "total_answers": 634,
+    "last_updated": "2026-09-28",
+    "total_answers": 635,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3807,6 +3807,12 @@
       "wordleNumber": 1926,
       "date": "2026-09-27",
       "answer": "SLOOP",
+      "difficulty": "medium"
+    },
+    "1927": {
+      "wordleNumber": 1927,
+      "date": "2026-09-28",
+      "answer": "TRUNK",
       "difficulty": "medium"
     }
   }
