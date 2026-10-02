@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-29",
-    "total_answers": 636,
+    "last_updated": "2026-09-30",
+    "total_answers": 637,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3819,6 +3819,12 @@
       "wordleNumber": 1928,
       "date": "2026-09-29",
       "answer": "SCUBA",
+      "difficulty": "medium"
+    },
+    "1929": {
+      "wordleNumber": 1929,
+      "date": "2026-09-30",
+      "answer": "RIVER",
       "difficulty": "medium"
     }
   }
