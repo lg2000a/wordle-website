@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-09-30",
-    "total_answers": 637,
+    "last_updated": "2026-10-01",
+    "total_answers": 638,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3825,6 +3825,12 @@
       "wordleNumber": 1929,
       "date": "2026-09-30",
       "answer": "RIVER",
+      "difficulty": "medium"
+    },
+    "1930": {
+      "wordleNumber": 1930,
+      "date": "2026-10-01",
+      "answer": "RITZY",
       "difficulty": "medium"
     }
   }
