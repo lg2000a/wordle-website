@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-01",
-    "total_answers": 638,
+    "last_updated": "2026-10-02",
+    "total_answers": 639,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3831,6 +3831,12 @@
       "wordleNumber": 1930,
       "date": "2026-10-01",
       "answer": "RITZY",
+      "difficulty": "medium"
+    },
+    "1931": {
+      "wordleNumber": 1931,
+      "date": "2026-10-02",
+      "answer": "USURY",
       "difficulty": "medium"
     }
   }
