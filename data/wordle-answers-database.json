@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-03",
-    "total_answers": 640,
+    "last_updated": "2026-10-04",
+    "total_answers": 641,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3843,6 +3843,12 @@
       "wordleNumber": 1932,
       "date": "2026-10-03",
       "answer": "PEEVE",
+      "difficulty": "medium"
+    },
+    "1933": {
+      "wordleNumber": 1933,
+      "date": "2026-10-04",
+      "answer": "SHACK",
       "difficulty": "medium"
     }
   }
