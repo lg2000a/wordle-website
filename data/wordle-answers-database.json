@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-04",
-    "total_answers": 641,
+    "last_updated": "2026-10-05",
+    "total_answers": 642,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3849,6 +3849,12 @@
       "wordleNumber": 1933,
       "date": "2026-10-04",
       "answer": "SHACK",
+      "difficulty": "medium"
+    },
+    "1934": {
+      "wordleNumber": 1934,
+      "date": "2026-10-05",
+      "answer": "MOCHA",
       "difficulty": "medium"
     }
   }
