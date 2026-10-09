@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-06",
-    "total_answers": 643,
+    "last_updated": "2026-10-07",
+    "total_answers": 644,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3861,6 +3861,12 @@
       "wordleNumber": 1935,
       "date": "2026-10-06",
       "answer": "DIMLY",
+      "difficulty": "medium"
+    },
+    "1936": {
+      "wordleNumber": 1936,
+      "date": "2026-10-07",
+      "answer": "PROVE",
       "difficulty": "medium"
     }
   }
