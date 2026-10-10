@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-07",
-    "total_answers": 644,
+    "last_updated": "2026-10-08",
+    "total_answers": 645,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3867,6 +3867,12 @@
       "wordleNumber": 1936,
       "date": "2026-10-07",
       "answer": "PROVE",
+      "difficulty": "medium"
+    },
+    "1937": {
+      "wordleNumber": 1937,
+      "date": "2026-10-08",
+      "answer": "STREW",
       "difficulty": "medium"
     }
   }
