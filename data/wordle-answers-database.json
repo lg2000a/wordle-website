@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-09",
-    "total_answers": 646,
+    "last_updated": "2026-10-10",
+    "total_answers": 647,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3879,6 +3879,12 @@
       "wordleNumber": 1938,
       "date": "2026-10-09",
       "answer": "MAJOR",
+      "difficulty": "medium"
+    },
+    "1939": {
+      "wordleNumber": 1939,
+      "date": "2026-10-10",
+      "answer": "BUMPY",
       "difficulty": "medium"
     }
   }
