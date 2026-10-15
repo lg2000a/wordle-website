@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-12",
-    "total_answers": 648,
+    "last_updated": "2026-10-13",
+    "total_answers": 649,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3891,6 +3891,12 @@
       "wordleNumber": 1941,
       "date": "2026-10-12",
       "answer": "YODEL",
+      "difficulty": "medium"
+    },
+    "1942": {
+      "wordleNumber": 1942,
+      "date": "2026-10-13",
+      "answer": "WIDER",
       "difficulty": "medium"
     }
   }
