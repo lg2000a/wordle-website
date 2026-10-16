@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-13",
-    "total_answers": 649,
+    "last_updated": "2026-10-14",
+    "total_answers": 650,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3897,6 +3897,12 @@
       "wordleNumber": 1942,
       "date": "2026-10-13",
       "answer": "WIDER",
+      "difficulty": "medium"
+    },
+    "1943": {
+      "wordleNumber": 1943,
+      "date": "2026-10-14",
+      "answer": "PSYCH",
       "difficulty": "medium"
     }
   }
