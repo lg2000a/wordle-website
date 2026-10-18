@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-15",
-    "total_answers": 651,
+    "last_updated": "2026-10-16",
+    "total_answers": 652,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3909,6 +3909,12 @@
       "wordleNumber": 1944,
       "date": "2026-10-15",
       "answer": "DUNCE",
+      "difficulty": "medium"
+    },
+    "1945": {
+      "wordleNumber": 1945,
+      "date": "2026-10-16",
+      "answer": "SHADY",
       "difficulty": "medium"
     }
   }
