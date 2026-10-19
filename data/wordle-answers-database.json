@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-16",
-    "total_answers": 652,
+    "last_updated": "2026-10-17",
+    "total_answers": 653,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3915,6 +3915,12 @@
       "wordleNumber": 1945,
       "date": "2026-10-16",
       "answer": "SHADY",
+      "difficulty": "medium"
+    },
+    "1946": {
+      "wordleNumber": 1946,
+      "date": "2026-10-17",
+      "answer": "GAFFE",
       "difficulty": "medium"
     }
   }
