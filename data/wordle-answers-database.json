@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-17",
-    "total_answers": 653,
+    "last_updated": "2026-10-18",
+    "total_answers": 654,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3921,6 +3921,12 @@
       "wordleNumber": 1946,
       "date": "2026-10-17",
       "answer": "GAFFE",
+      "difficulty": "medium"
+    },
+    "1947": {
+      "wordleNumber": 1947,
+      "date": "2026-10-18",
+      "answer": "ADORN",
       "difficulty": "medium"
     }
   }
