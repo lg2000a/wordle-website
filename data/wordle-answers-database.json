@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-19",
-    "total_answers": 655,
+    "last_updated": "2026-10-20",
+    "total_answers": 656,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3933,6 +3933,12 @@
       "wordleNumber": 1948,
       "date": "2026-10-19",
       "answer": "STINK",
+      "difficulty": "medium"
+    },
+    "1949": {
+      "wordleNumber": 1949,
+      "date": "2026-10-20",
+      "answer": "WREST",
       "difficulty": "medium"
     }
   }
