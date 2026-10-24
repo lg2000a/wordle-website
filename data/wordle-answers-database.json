@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-21",
-    "total_answers": 657,
+    "last_updated": "2026-10-22",
+    "total_answers": 658,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3945,6 +3945,12 @@
       "wordleNumber": 1950,
       "date": "2026-10-21",
       "answer": "PENNY",
+      "difficulty": "medium"
+    },
+    "1951": {
+      "wordleNumber": 1951,
+      "date": "2026-10-22",
+      "answer": "RESET",
       "difficulty": "medium"
     }
   }
