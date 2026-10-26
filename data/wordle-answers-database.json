@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-23",
-    "total_answers": 659,
+    "last_updated": "2026-10-24",
+    "total_answers": 660,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3957,6 +3957,12 @@
       "wordleNumber": 1952,
       "date": "2026-10-23",
       "answer": "TRILL",
+      "difficulty": "medium"
+    },
+    "1953": {
+      "wordleNumber": 1953,
+      "date": "2026-10-24",
+      "answer": "HOLEY",
       "difficulty": "medium"
     }
   }
