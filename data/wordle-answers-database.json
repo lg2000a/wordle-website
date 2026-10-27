@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-24",
-    "total_answers": 660,
+    "last_updated": "2026-10-25",
+    "total_answers": 661,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3963,6 +3963,12 @@
       "wordleNumber": 1953,
       "date": "2026-10-24",
       "answer": "HOLEY",
+      "difficulty": "medium"
+    },
+    "1954": {
+      "wordleNumber": 1954,
+      "date": "2026-10-25",
+      "answer": "DRESS",
       "difficulty": "medium"
     }
   }
