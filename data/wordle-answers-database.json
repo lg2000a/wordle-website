@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-29",
-    "total_answers": 665,
+    "last_updated": "2026-10-30",
+    "total_answers": 666,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3993,6 +3993,12 @@
       "wordleNumber": 1958,
       "date": "2026-10-29",
       "answer": "MOTOR",
+      "difficulty": "medium"
+    },
+    "1959": {
+      "wordleNumber": 1959,
+      "date": "2026-10-30",
+      "answer": "SLIDE",
       "difficulty": "medium"
     }
   }
