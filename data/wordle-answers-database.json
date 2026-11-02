@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-30",
-    "total_answers": 666,
+    "last_updated": "2026-10-31",
+    "total_answers": 667,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -3999,6 +3999,12 @@
       "wordleNumber": 1959,
       "date": "2026-10-30",
       "answer": "SLIDE",
+      "difficulty": "medium"
+    },
+    "1960": {
+      "wordleNumber": 1960,
+      "date": "2026-10-31",
+      "answer": "YAHOO",
       "difficulty": "medium"
     }
   }
