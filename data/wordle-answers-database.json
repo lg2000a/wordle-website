@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-10-31",
-    "total_answers": 667,
+    "last_updated": "2026-11-01",
+    "total_answers": 668,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4005,6 +4005,12 @@
       "wordleNumber": 1960,
       "date": "2026-10-31",
       "answer": "YAHOO",
+      "difficulty": "medium"
+    },
+    "1961": {
+      "wordleNumber": 1961,
+      "date": "2026-11-01",
+      "answer": "VIPER",
       "difficulty": "medium"
     }
   }
