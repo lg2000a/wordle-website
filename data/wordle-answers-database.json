@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-01",
-    "total_answers": 668,
+    "last_updated": "2026-11-02",
+    "total_answers": 669,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4011,6 +4011,12 @@
       "wordleNumber": 1961,
       "date": "2026-11-01",
       "answer": "VIPER",
+      "difficulty": "medium"
+    },
+    "1962": {
+      "wordleNumber": 1962,
+      "date": "2026-11-02",
+      "answer": "SCOOT",
       "difficulty": "medium"
     }
   }
