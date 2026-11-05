@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-02",
-    "total_answers": 669,
+    "last_updated": "2026-11-03",
+    "total_answers": 670,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4017,6 +4017,12 @@
       "wordleNumber": 1962,
       "date": "2026-11-02",
       "answer": "SCOOT",
+      "difficulty": "medium"
+    },
+    "1963": {
+      "wordleNumber": 1963,
+      "date": "2026-11-03",
+      "answer": "POUCH",
       "difficulty": "medium"
     }
   }
