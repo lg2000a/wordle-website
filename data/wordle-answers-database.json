@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-03",
-    "total_answers": 670,
+    "last_updated": "2026-11-04",
+    "total_answers": 671,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4023,6 +4023,12 @@
       "wordleNumber": 1963,
       "date": "2026-11-03",
       "answer": "POUCH",
+      "difficulty": "medium"
+    },
+    "1964": {
+      "wordleNumber": 1964,
+      "date": "2026-11-04",
+      "answer": "NUTTY",
       "difficulty": "medium"
     }
   }
