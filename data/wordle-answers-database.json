@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-04",
-    "total_answers": 671,
+    "last_updated": "2026-11-05",
+    "total_answers": 672,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4029,6 +4029,12 @@
       "wordleNumber": 1964,
       "date": "2026-11-04",
       "answer": "NUTTY",
+      "difficulty": "medium"
+    },
+    "1965": {
+      "wordleNumber": 1965,
+      "date": "2026-11-05",
+      "answer": "PARCH",
       "difficulty": "medium"
     }
   }
