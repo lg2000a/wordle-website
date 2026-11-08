@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-05",
-    "total_answers": 672,
+    "last_updated": "2026-11-06",
+    "total_answers": 673,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4035,6 +4035,12 @@
       "wordleNumber": 1965,
       "date": "2026-11-05",
       "answer": "PARCH",
+      "difficulty": "medium"
+    },
+    "1966": {
+      "wordleNumber": 1966,
+      "date": "2026-11-06",
+      "answer": "DRECK",
       "difficulty": "medium"
     }
   }
