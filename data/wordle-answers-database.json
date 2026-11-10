@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-07",
-    "total_answers": 674,
+    "last_updated": "2026-11-09",
+    "total_answers": 675,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4047,6 +4047,12 @@
       "wordleNumber": 1967,
       "date": "2026-11-07",
       "answer": "PRATE",
+      "difficulty": "medium"
+    },
+    "1969": {
+      "wordleNumber": 1969,
+      "date": "2026-11-09",
+      "answer": "LOAMY",
       "difficulty": "medium"
     }
   }
