@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-10",
-    "total_answers": 676,
+    "last_updated": "2026-11-11",
+    "total_answers": 677,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4059,6 +4059,12 @@
       "wordleNumber": 1970,
       "date": "2026-11-10",
       "answer": "TRUCE",
+      "difficulty": "medium"
+    },
+    "1971": {
+      "wordleNumber": 1971,
+      "date": "2026-11-11",
+      "answer": "BLESS",
       "difficulty": "medium"
     }
   }
