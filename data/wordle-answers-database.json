@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-11",
-    "total_answers": 677,
+    "last_updated": "2026-11-12",
+    "total_answers": 678,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4065,6 +4065,12 @@
       "wordleNumber": 1971,
       "date": "2026-11-11",
       "answer": "BLESS",
+      "difficulty": "medium"
+    },
+    "1972": {
+      "wordleNumber": 1972,
+      "date": "2026-11-12",
+      "answer": "KARAT",
       "difficulty": "medium"
     }
   }
