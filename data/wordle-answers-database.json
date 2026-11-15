@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-12",
-    "total_answers": 678,
+    "last_updated": "2026-11-13",
+    "total_answers": 679,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4071,6 +4071,12 @@
       "wordleNumber": 1972,
       "date": "2026-11-12",
       "answer": "KARAT",
+      "difficulty": "medium"
+    },
+    "1973": {
+      "wordleNumber": 1973,
+      "date": "2026-11-13",
+      "answer": "MOXIE",
       "difficulty": "medium"
     }
   }
