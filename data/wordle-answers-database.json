@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-16",
-    "total_answers": 680,
+    "last_updated": "2026-11-17",
+    "total_answers": 681,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4083,6 +4083,12 @@
       "wordleNumber": 1976,
       "date": "2026-11-16",
       "answer": "DRAWL",
+      "difficulty": "medium"
+    },
+    "1977": {
+      "wordleNumber": 1977,
+      "date": "2026-11-17",
+      "answer": "ROAST",
       "difficulty": "medium"
     }
   }
