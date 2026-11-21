@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-18",
-    "total_answers": 682,
+    "last_updated": "2026-11-19",
+    "total_answers": 683,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4095,6 +4095,12 @@
       "wordleNumber": 1978,
       "date": "2026-11-18",
       "answer": "BLURT",
+      "difficulty": "medium"
+    },
+    "1979": {
+      "wordleNumber": 1979,
+      "date": "2026-11-19",
+      "answer": "CLOUT",
       "difficulty": "medium"
     }
   }
