@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-20",
-    "total_answers": 684,
+    "last_updated": "2026-11-21",
+    "total_answers": 685,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4107,6 +4107,12 @@
       "wordleNumber": 1980,
       "date": "2026-11-20",
       "answer": "AROSE",
+      "difficulty": "medium"
+    },
+    "1981": {
+      "wordleNumber": 1981,
+      "date": "2026-11-21",
+      "answer": "STENT",
       "difficulty": "medium"
     }
   }
