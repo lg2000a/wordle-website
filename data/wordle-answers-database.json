@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-21",
-    "total_answers": 685,
+    "last_updated": "2026-11-23",
+    "total_answers": 686,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4113,6 +4113,12 @@
       "wordleNumber": 1981,
       "date": "2026-11-21",
       "answer": "STENT",
+      "difficulty": "medium"
+    },
+    "1983": {
+      "wordleNumber": 1983,
+      "date": "2026-11-23",
+      "answer": "FILTH",
       "difficulty": "medium"
     }
   }
