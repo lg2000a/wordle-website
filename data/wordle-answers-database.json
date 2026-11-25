@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-23",
-    "total_answers": 686,
+    "last_updated": "2026-11-24",
+    "total_answers": 687,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4119,6 +4119,12 @@
       "wordleNumber": 1983,
       "date": "2026-11-23",
       "answer": "FILTH",
+      "difficulty": "medium"
+    },
+    "1984": {
+      "wordleNumber": 1984,
+      "date": "2026-11-24",
+      "answer": "SNEER",
       "difficulty": "medium"
     }
   }
