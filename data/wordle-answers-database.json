@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-24",
-    "total_answers": 687,
+    "last_updated": "2026-11-25",
+    "total_answers": 688,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4125,6 +4125,12 @@
       "wordleNumber": 1984,
       "date": "2026-11-24",
       "answer": "SNEER",
+      "difficulty": "medium"
+    },
+    "1985": {
+      "wordleNumber": 1985,
+      "date": "2026-11-25",
+      "answer": "SPICY",
       "difficulty": "medium"
     }
   }
