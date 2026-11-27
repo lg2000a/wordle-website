@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-25",
-    "total_answers": 688,
+    "last_updated": "2026-11-26",
+    "total_answers": 689,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4131,6 +4131,12 @@
       "wordleNumber": 1985,
       "date": "2026-11-25",
       "answer": "SPICY",
+      "difficulty": "medium"
+    },
+    "1986": {
+      "wordleNumber": 1986,
+      "date": "2026-11-26",
+      "answer": "TENSE",
       "difficulty": "medium"
     }
   }
