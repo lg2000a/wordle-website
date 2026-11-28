@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-11-26",
-    "total_answers": 689,
+    "last_updated": "2026-11-27",
+    "total_answers": 690,
     "data_format_version": "1.0"
   },
   "answers": {
@@ -4137,6 +4137,12 @@
       "wordleNumber": 1986,
       "date": "2026-11-26",
       "answer": "TENSE",
+      "difficulty": "medium"
+    },
+    "1987": {
+      "wordleNumber": 1987,
+      "date": "2026-11-27",
+      "answer": "SHEAF",
       "difficulty": "medium"
     }
   }
